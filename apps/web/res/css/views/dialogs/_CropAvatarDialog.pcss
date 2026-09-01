@@ -1,0 +1,51 @@
+/*
+Copyright 2026 TrustBridge
+
+SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
+Please see LICENSE files in the repository root for full details.
+*/
+
+.mx_CropAvatarDialog {
+    .mx_CropAvatarDialog_viewport {
+        position: relative;
+        width: 320px;
+        height: 320px;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 8px;
+        background-color: $system;
+        cursor: grab;
+        touch-action: none;
+        user-select: none;
+
+        &:active {
+            cursor: grabbing;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: none;
+            pointer-events: none;
+        }
+    }
+
+    .mx_CropAvatarDialog_mask {
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.55);
+        pointer-events: none;
+    }
+
+    .mx_CropAvatarDialog_zoomRow {
+        display: flex;
+        align-items: center;
+        margin-top: var(--cpd-space-4x);
+    }
+
+    .mx_CropAvatarDialog_zoomSlider {
+        width: 100%;
+    }
+}

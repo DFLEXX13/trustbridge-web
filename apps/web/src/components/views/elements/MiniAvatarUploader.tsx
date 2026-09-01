@@ -15,7 +15,7 @@ import MatrixClientContext from "../../../contexts/MatrixClientContext";
 import { chromeFileInputFix } from "../../../utils/BrowserWorkarounds";
 import AccessibleButton from "./AccessibleButton";
 import Spinner from "./Spinner";
-import { getFileChanged } from "../settings/AvatarSetting.tsx";
+import { cropAvatarFile, getFileChanged } from "../settings/AvatarSetting.tsx";
 import { useScopedRoomContext } from "../../../contexts/ScopedRoomContext.tsx";
 
 export const AVATAR_SIZE = "52px";
@@ -62,13 +62,16 @@ const MiniAvatarUploader: React.FC<IProps> = ({
                     onClick?.(ev);
                 }}
                 onChange={async (ev): Promise<void> => {
-                    setBusy(true);
                     const file = getFileChanged(ev);
                     if (file) {
-                        const { content_uri: uri } = await cli.uploadContent(file);
-                        await setAvatarUrl(uri);
+                        const croppedFile = await cropAvatarFile(file);
+                        if (croppedFile) {
+                            setBusy(true);
+                            const { content_uri: uri } = await cli.uploadContent(croppedFile);
+                            await setAvatarUrl(uri);
+                            setBusy(false);
+                        }
                     }
-                    setBusy(false);
                 }}
                 accept="image/*"
             />

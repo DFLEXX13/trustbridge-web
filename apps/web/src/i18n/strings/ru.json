@@ -719,6 +719,11 @@
         "twemoji": "<twemoji>Изображение смайликов Twemoji</twemoji> © <author> Twitter, Inc и другие авторы </author> используются в соответствии с условиями <terms> CC-BY 4.0</terms>.",
         "twemoji_colr": "<colr>twemoji-colr</colr> шрифт от автора © <author>Mozilla Foundation</author> используется на условиях <terms>Apache 2.0</terms>."
     },
+    "crop_avatar": {
+        "title": "Обрежьте фото",
+        "zoom_label": "Масштаб",
+        "save_button": "Сохранить"
+    },
     "decline_invitation_dialog": {
         "confirm": "Вы действительно хотите отклонить приглашение присоединиться \"%(roomName)s\"?",
         "ignore_user_help": "Вы не увидите сообщений или приглашений в чатах от этого пользователя.",

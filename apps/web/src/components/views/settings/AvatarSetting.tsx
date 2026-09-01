@@ -20,6 +20,7 @@ import AccessibleButton from "../elements/AccessibleButton";
 import BaseAvatar from "../avatars/BaseAvatar";
 import Modal from "../../../Modal.tsx";
 import ErrorDialog from "../dialogs/ErrorDialog.tsx";
+import CropAvatarDialog from "../dialogs/CropAvatarDialog.tsx";
 
 interface MenuProps {
     trigger: ReactNode;
@@ -117,6 +118,16 @@ export function getFileChanged(e: React.ChangeEvent<HTMLInputElement>): File | n
 }
 
 /**
+ * Opens a modal letting the user pan & zoom the given image before it's used as an
+ * avatar. Resolves with the cropped file, or `undefined` if the user cancelled.
+ */
+export async function cropAvatarFile(file: File): Promise<File | undefined> {
+    const { finished } = Modal.createDialog(CropAvatarDialog, { file });
+    const [croppedFile] = await finished;
+    return croppedFile;
+}
+
+/**
  * Component for setting or removing an avatar on something (eg. a user or a room)
  */
 const AvatarSetting: React.FC<IProps> = ({
@@ -148,10 +159,11 @@ const AvatarSetting: React.FC<IProps> = ({
     }, [avatar]);
 
     const onFileChanged = useCallback(
-        (e: React.ChangeEvent<HTMLInputElement>) => {
+        async (e: React.ChangeEvent<HTMLInputElement>) => {
             const file = getFileChanged(e);
             if (file) {
-                onChange?.(file);
+                const croppedFile = await cropAvatarFile(file);
+                if (croppedFile) onChange?.(croppedFile);
             }
         },
         [onChange],

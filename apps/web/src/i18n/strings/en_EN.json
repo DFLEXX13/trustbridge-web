@@ -740,6 +740,11 @@
         "twemoji": "The <twemoji>Twemoji</twemoji> emoji art is © <author>Twitter, Inc and other contributors</author> used under the terms of <terms>CC-BY 4.0</terms>.",
         "twemoji_colr": "The <colr>twemoji-colr</colr> font is © <author>Mozilla Foundation</author> used under the terms of <terms>Apache 2.0</terms>."
     },
+    "crop_avatar": {
+        "title": "Crop your photo",
+        "zoom_label": "Zoom",
+        "save_button": "Save"
+    },
     "decline_invitation_dialog": {
         "confirm": "Are you sure you want to decline the invitation to join \"%(roomName)s\"?",
         "ignore_user_help": "You will not see any messages or room invites from this user.",
