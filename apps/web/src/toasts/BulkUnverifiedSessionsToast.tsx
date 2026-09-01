@@ -7,7 +7,6 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React from "react";
-import { ErrorSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../languageHandler";
 import dis from "../dispatcher/dispatcher";
@@ -17,6 +16,7 @@ import ToastStore from "../stores/ToastStore";
 import { Action } from "../dispatcher/actions";
 import { snoozeBulkUnverifiedDeviceReminder } from "../utils/device/snoozeBulkUnverifiedDeviceReminder";
 
+import { AlertCircle as ErrorSolidIcon } from "lucide-react";
 const TOAST_KEY = "reviewsessions";
 
 export const showToast = (deviceIds: Set<string>): void => {

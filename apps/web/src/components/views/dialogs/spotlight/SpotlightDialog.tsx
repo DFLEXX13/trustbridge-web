@@ -30,16 +30,6 @@ import React, {
     useState,
 } from "react";
 import sanitizeHtml from "sanitize-html";
-import {
-    ChatIcon,
-    RoomIcon,
-    SpaceIcon,
-    UserProfileIcon,
-    HomeIcon,
-    GroupIcon,
-    CloseIcon,
-    LinkIcon,
-} from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { KeyBindingAction } from "../../../../accessibility/KeyboardShortcuts";
 import {
@@ -97,6 +87,16 @@ import { filterBoolean } from "../../../../utils/arrays";
 import { transformSearchTerm } from "../../../../utils/SearchInput";
 import { Filter } from "./Filter";
 
+import {
+    MessageCircle as ChatIcon,
+    MessageSquare as RoomIcon,
+    LayoutGrid as SpaceIcon,
+    User as UserProfileIcon,
+    Home as HomeIcon,
+    Users as GroupIcon,
+    X as CloseIcon,
+    Link as LinkIcon,
+} from "lucide-react";
 const MAX_RECENT_SEARCHES = 10;
 const SECTION_LIMIT = 50; // only show 50 results per section for performance reasons
 const AVATAR_SIZE = "24px";

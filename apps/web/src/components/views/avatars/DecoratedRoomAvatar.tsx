@@ -19,7 +19,6 @@ import {
 } from "matrix-js-sdk/src/matrix";
 import { UnstableValue } from "matrix-js-sdk/src/NamespacedValue";
 import { Tooltip } from "@vector-im/compound-web";
-import { PublicIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import RoomAvatar from "./RoomAvatar";
 import { NotificationBadge } from "../rooms/NotificationBadge/NotificationBadge";
@@ -32,6 +31,7 @@ import DMRoomMap from "../../../utils/DMRoomMap";
 import { type IOOBData } from "../../../stores/ThreepidInviteStore";
 import { getJoinedNonFunctionalMembers } from "../../../utils/room/getJoinedNonFunctionalMembers";
 
+import { Globe as PublicIcon } from "lucide-react";
 interface IProps {
     room: Room;
     size: string;

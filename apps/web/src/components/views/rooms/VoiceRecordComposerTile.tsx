@@ -10,7 +10,6 @@ import React, { type ReactNode } from "react";
 import { MediaBody } from "@element-hq/web-shared-components";
 import { type Room, type IEventRelation, type MatrixEvent } from "matrix-js-sdk/src/matrix";
 import { logger } from "matrix-js-sdk/src/logger";
-import { DeleteIcon, StopSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 import { RecordingState } from "../../../audio/VoiceRecording";
@@ -37,6 +36,7 @@ import { type IUpload, type VoiceMessageRecording } from "../../../audio/VoiceMe
 import { createVoiceMessageContent } from "../../../utils/createVoiceMessageContent";
 import AccessibleButton from "../elements/AccessibleButton";
 
+import { Trash2 as DeleteIcon, CircleStop as StopSolidIcon } from "lucide-react";
 interface IProps {
     room: Room;
     relation?: IEventRelation;

@@ -9,8 +9,7 @@ Please see LICENSE files in the repository root for full details.
 import React, { type ChangeEvent, type ReactNode, useCallback, useEffect, useMemo, useState, useId } from "react";
 import { logger } from "matrix-js-sdk/src/logger";
 import { EditInPlace, Alert, ErrorMessage } from "@vector-im/compound-web";
-import PopOutIcon from "@vector-im/compound-design-tokens/assets/web/icons/pop-out";
-import SignOutIcon from "@vector-im/compound-design-tokens/assets/web/icons/sign-out";
+
 import {
     Flex,
     SetStatusView,
@@ -35,6 +34,7 @@ import { SettingsSection } from "./shared/SettingsSection.tsx";
 import { SetStatusViewModel } from "../../../viewmodels/status/SetStatusViewModel.ts";
 import SettingsStore from "../../../settings/SettingsStore.ts";
 
+import { ExternalLink as PopOutIcon, LogOut as SignOutIcon } from "lucide-react";
 const SpinnerToast: React.FC<{ children?: ReactNode }> = ({ children }) => (
     <>
         <InlineSpinner />

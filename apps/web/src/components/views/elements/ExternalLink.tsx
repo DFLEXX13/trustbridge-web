@@ -8,8 +8,8 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { type DetailedHTMLProps, type AnchorHTMLAttributes } from "react";
 import classNames from "classnames";
-import PopOutIcon from "@vector-im/compound-design-tokens/assets/web/icons/pop-out";
 
+import { ExternalLink as PopOutIcon } from "lucide-react";
 interface Props extends DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement> {}
 
 /**

@@ -7,13 +7,12 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { type JSX } from "react";
 import { Tooltip } from "@vector-im/compound-web";
-import VerifiedIcon from "@vector-im/compound-design-tokens/assets/web/icons/verified";
-import ErrorIcon from "@vector-im/compound-design-tokens/assets/web/icons/error-solid";
 
 import { _t } from "../../../../../../languageHandler";
 import { E2EStatus } from "../../../../../../utils/ShieldUtils";
 import { crossSigningUserTitles } from "../../../E2EIcon";
 
+import { BadgeCheck as VerifiedIcon, AlertCircle as ErrorIcon } from "lucide-react";
 function getIconFromStatus(status: E2EStatus): JSX.Element | undefined {
     switch (status) {
         case E2EStatus.Normal:

@@ -9,12 +9,12 @@ Please see LICENSE files in the repository root for full details.
 import React, { useEffect, useState } from "react";
 import { type ContentHelpers } from "matrix-js-sdk/src/matrix";
 import { Tooltip } from "@vector-im/compound-web";
-import { PopOutIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 import { makeMapSiteLink, parseGeoUri } from "../../../utils/location";
 import CopyableText from "../elements/CopyableText";
 
+import { ExternalLink as PopOutIcon } from "lucide-react";
 interface Props {
     latestLocationState?: ContentHelpers.BeaconLocationState;
 }

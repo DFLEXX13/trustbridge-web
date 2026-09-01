@@ -10,7 +10,7 @@ Please see LICENSE files in the repository root for full details.
 import React, { type JSX, useCallback } from "react";
 import { logger } from "matrix-js-sdk/src/logger";
 import { type MatrixEvent, type Room, type RoomState } from "matrix-js-sdk/src/matrix";
-import { ChatSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { EventTileBubble } from "@element-hq/web-shared-components";
 
 import dis from "../../../dispatcher/dispatcher";
@@ -24,6 +24,7 @@ import SettingsStore from "../../../settings/SettingsStore";
 import MatrixToPermalinkConstructor from "../../../utils/permalinks/MatrixToPermalinkConstructor";
 import { useScopedRoomContext } from "../../../contexts/ScopedRoomContext.tsx";
 
+import { MessageCircle as ChatSolidIcon } from "lucide-react";
 interface IProps {
     /** The m.room.create MatrixEvent that this tile represents */
     mxEvent: MatrixEvent;

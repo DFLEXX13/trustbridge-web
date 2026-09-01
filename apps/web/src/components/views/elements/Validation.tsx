@@ -10,8 +10,8 @@ Please see LICENSE files in the repository root for full details.
 import React, { type JSX, type ReactNode } from "react";
 import classNames from "classnames";
 import memoizeOne from "memoize-one";
-import { CheckIcon, CloseIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
+import { Check as CheckIcon, X as CloseIcon } from "lucide-react";
 type Data = Pick<IFieldState, "value" | "allowEmpty">;
 
 interface IResult {

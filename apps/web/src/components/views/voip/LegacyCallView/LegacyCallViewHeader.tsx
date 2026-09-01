@@ -7,17 +7,17 @@ Please see LICENSE files in the repository root for full details.
 
 import { type Room } from "matrix-js-sdk/src/matrix";
 import React from "react";
-import {
-    PopOutIcon,
-    ExpandIcon,
-    PinSolidIcon,
-    VoiceCallSolidIcon,
-} from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../../languageHandler";
 import RoomAvatar from "../../avatars/RoomAvatar";
 import AccessibleButton from "../../elements/AccessibleButton";
 
+import {
+    ExternalLink as PopOutIcon,
+    Maximize2 as ExpandIcon,
+    Pin as PinSolidIcon,
+    Phone as VoiceCallSolidIcon,
+} from "lucide-react";
 interface LegacyCallControlsProps {
     onExpand?: () => void;
     onPin?: () => void;

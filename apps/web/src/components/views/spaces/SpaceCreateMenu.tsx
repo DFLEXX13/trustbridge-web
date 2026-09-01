@@ -27,7 +27,6 @@ import {
     type ICreateRoomOpts,
 } from "matrix-js-sdk/src/matrix";
 import { logger } from "matrix-js-sdk/src/logger";
-import { LockSolidIcon, PublicIcon, ChevronLeftIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 import ContextMenu, { ChevronFace } from "../../structures/ContextMenu";
@@ -49,6 +48,7 @@ import { useSettingValue } from "../../../hooks/useSettings.ts";
 import { UIFeature } from "../../../settings/UIFeature.ts";
 import SpacePillButton from "../../structures/SpacePillButton.tsx";
 
+import { Lock as LockSolidIcon, Globe as PublicIcon, ChevronLeft as ChevronLeftIcon } from "lucide-react";
 export const createSpace = async (
     client: MatrixClient,
     name: string,

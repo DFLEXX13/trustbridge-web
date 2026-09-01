@@ -8,7 +8,6 @@ Please see LICENSE files in the repository root for full details.
 
 import React from "react";
 import { type Room, type IEventRelation } from "matrix-js-sdk/src/matrix";
-import { CloseIcon, ShareIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import ContentMessages from "../../ContentMessages";
 import dis from "../../dispatcher/dispatcher";
@@ -21,6 +20,7 @@ import { type ActionPayload } from "../../dispatcher/payloads";
 import { type UploadPayload } from "../../dispatcher/payloads/UploadPayload";
 import { fileSize } from "../../utils/FileUtils";
 
+import { X as CloseIcon, Share2 as ShareIcon } from "lucide-react";
 interface IProps {
     room: Room;
     relation?: IEventRelation;

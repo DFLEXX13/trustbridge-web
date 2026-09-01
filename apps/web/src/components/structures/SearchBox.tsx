@@ -10,12 +10,12 @@ Please see LICENSE files in the repository root for full details.
 import React, { createRef, type HTMLProps } from "react";
 import { throttle } from "lodash";
 import classNames from "classnames";
-import { CloseIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import AccessibleButton from "../../components/views/elements/AccessibleButton";
 import { getKeyBindingsManager } from "../../KeyBindingsManager";
 import { KeyBindingAction } from "../../accessibility/KeyboardShortcuts";
 
+import { X as CloseIcon } from "lucide-react";
 interface IProps extends HTMLProps<HTMLInputElement> {
     onSearch: (query: string) => void;
     onCleared?: (source?: string) => void;

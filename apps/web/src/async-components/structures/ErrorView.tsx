@@ -7,7 +7,7 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { type JSX, type ReactNode } from "react";
 import { Text, Heading, Button, Separator } from "@vector-im/compound-web";
-import PopOutIcon from "@vector-im/compound-design-tokens/assets/web/icons/pop-out";
+
 import { Flex } from "@element-hq/web-shared-components";
 import { LinuxIcon, MacIcon, WindowsIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
@@ -18,6 +18,7 @@ import { _t } from "../../languageHandler";
 // PostCSS variables will be accessible.
 import "../../../res/css/structures/ErrorView.pcss";
 
+import { ExternalLink as PopOutIcon } from "lucide-react";
 interface IProps {
     // both of these should already be internationalised
     title: string;

@@ -6,11 +6,11 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React from "react";
-import { ChevronRightIcon, OverflowHorizontalIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 import AccessibleButton from "../elements/AccessibleButton";
 
+import { ChevronRight as ChevronRightIcon, MoreHorizontal as OverflowHorizontalIcon } from "lucide-react";
 interface Props {
     // The number of remaining items
     remaining: number;

@@ -8,7 +8,6 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { type JSX } from "react";
 import { logger } from "matrix-js-sdk/src/logger";
-import NotificationsIcon from "@vector-im/compound-design-tokens/assets/web/icons/notifications";
 
 import { _t } from "../../languageHandler";
 import { MatrixClientPeg } from "../../MatrixClientPeg";
@@ -22,6 +21,7 @@ import EmptyState from "../views/right_panel/EmptyState";
 import { ScopedRoomContextProvider } from "../../contexts/ScopedRoomContext.tsx";
 import { EventPresentationContextProvider } from "../../utils/EventPresentationContextProvider";
 
+import { Bell as NotificationsIcon } from "lucide-react";
 interface IProps {
     onClose(): void;
 }

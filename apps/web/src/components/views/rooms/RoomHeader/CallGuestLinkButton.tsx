@@ -5,7 +5,7 @@ Copyright 2024 The Matrix.org Foundation C.I.C.
 SPDX-License-Identifier: AGPL-3.0-only OR GPL-3.0-only OR LicenseRef-Element-Commercial
 Please see LICENSE files in the repository root for full details.
 */
-import ExternalLinkIcon from "@vector-im/compound-design-tokens/assets/web/icons/link";
+
 import { Button, IconButton, Tooltip } from "@vector-im/compound-web";
 import React, { useCallback } from "react";
 import { logger } from "matrix-js-sdk/src/logger";
@@ -20,6 +20,7 @@ import { useGuestAccessInformation } from "../../../../hooks/room/useGuestAccess
 import JoinRuleSettings from "../../settings/JoinRuleSettings";
 import SettingsStore from "../../../../settings/SettingsStore";
 
+import { Link as ExternalLinkIcon } from "lucide-react";
 /**
  * Display a button to open a dialog to share a link to the call using a element call guest spa url (`element_call:guest_spa_url` in the EW config).
  * @param room

@@ -6,7 +6,7 @@
  */
 
 import React, { type JSX, useCallback } from "react";
-import { CheckIcon, CloseIcon, UserAddSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { Button, PageHeader } from "@vector-im/compound-web";
 
 import { InviteKind } from "../InviteDialogTypes.ts";
@@ -16,6 +16,7 @@ import { type ScreenName } from "../../../../PosthogTrackers.ts";
 import { DMRoomTile } from "./DMRoomTile.tsx";
 import { _t } from "../../../../languageHandler";
 
+import { Check as CheckIcon, X as CloseIcon, UserPlus as UserAddSolidIcon } from "lucide-react";
 interface Props {
     /** Callback that will be called when the 'Continue' or 'Invite' button is clicked. */
     onContinue: () => void;

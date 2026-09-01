@@ -8,13 +8,13 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { createRef } from "react";
 import { type MatrixCall } from "matrix-js-sdk/src/webrtc/call";
-import { CloseIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import AccessibleButton, { type ButtonEvent } from "../elements/AccessibleButton";
 import ContextMenu, { type IProps as IContextMenuProps } from "../../structures/ContextMenu";
 import Field from "../elements/Field";
 import DialPad from "../voip/DialPad";
 
+import { X as CloseIcon } from "lucide-react";
 interface IProps extends IContextMenuProps {
     call: MatrixCall;
 }

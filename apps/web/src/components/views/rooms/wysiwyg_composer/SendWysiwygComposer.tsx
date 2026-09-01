@@ -8,7 +8,6 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { type JSX, type RefObject, useMemo, type ReactNode } from "react";
 import { type IEventRelation } from "matrix-js-sdk/src/matrix";
-import LockOffIcon from "@vector-im/compound-design-tokens/assets/web/icons/lock-off";
 
 import { useWysiwygSendActionHandler } from "./hooks/useWysiwygSendActionHandler";
 import { WysiwygComposer } from "./components/WysiwygComposer";
@@ -20,6 +19,7 @@ import { type MenuProps } from "../../../structures/ContextMenu";
 import { Emoji } from "./components/Emoji";
 import { ComposerContext, getDefaultContextValue } from "./ComposerContext";
 
+import { LockOpen as LockOffIcon } from "lucide-react";
 interface ContentProps {
     disabled?: boolean;
     composerFunctions: ComposerFunctions;

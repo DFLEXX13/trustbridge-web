@@ -29,13 +29,7 @@ import {
 import { AvatarStack, Button, Form, Heading, InlineField, Label, ToggleInput, Tooltip } from "@vector-im/compound-web";
 import { logger } from "matrix-js-sdk/src/logger";
 import { type IRTCNotificationContent } from "matrix-js-sdk/src/matrixrtc";
-import {
-    CheckIcon,
-    CloseIcon,
-    ExpandIcon,
-    VideoCallSolidIcon,
-    VoiceCallSolidIcon,
-} from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { AvatarWithDetails } from "@element-hq/web-shared-components";
 
 import { _t } from "../languageHandler";
@@ -56,6 +50,13 @@ import DMRoomMap from "../utils/DMRoomMap";
 import MemberAvatar from "../components/views/avatars/MemberAvatar";
 import { SDKContext } from "../contexts/SDKContext.ts";
 
+import {
+    Check as CheckIcon,
+    X as CloseIcon,
+    Maximize2 as ExpandIcon,
+    Video as VideoCallSolidIcon,
+    Phone as VoiceCallSolidIcon,
+} from "lucide-react";
 /**
  * Get the key for the incoming call toast. A combination of the call ID and room ID.
  * @param callId The ID of the call.

@@ -6,14 +6,7 @@
  */
 
 import React, { type HTMLProps, type JSX } from "react";
-import {
-    MentionIcon,
-    ErrorIcon,
-    NotificationsOffSolidIcon,
-    VideoCallSolidIcon,
-    EmailSolidIcon,
-    VoiceCallSolidIcon,
-} from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { UnreadCounter, Unread } from "@vector-im/compound-web";
 import { CallType } from "matrix-js-sdk/src/webrtc/call";
 import { Flex } from "@element-hq/web-shared-components";
@@ -22,6 +15,14 @@ import { type RoomNotificationState } from "../../../stores/notifications/RoomNo
 import { useTypedEventEmitterState } from "../../../hooks/useEventEmitter";
 import { NotificationStateEvents } from "../../../stores/notifications/NotificationState";
 
+import {
+    AtSign as MentionIcon,
+    AlertCircle as ErrorIcon,
+    BellOff as NotificationsOffSolidIcon,
+    Video as VideoCallSolidIcon,
+    Mail as EmailSolidIcon,
+    Phone as VoiceCallSolidIcon,
+} from "lucide-react";
 interface NotificationDecorationProps extends HTMLProps<HTMLDivElement> {
     /**
      * The notification state of the room or thread.

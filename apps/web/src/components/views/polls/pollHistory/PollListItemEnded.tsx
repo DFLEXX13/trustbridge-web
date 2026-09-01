@@ -9,7 +9,6 @@ Please see LICENSE files in the repository root for full details.
 import React, { useEffect, useState } from "react";
 import { type PollAnswerSubevent } from "matrix-js-sdk/src/extensible_events_v1/PollStartEvent";
 import { type MatrixEvent, type Poll, PollEvent, type Relations } from "matrix-js-sdk/src/matrix";
-import { PollsEndIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../../languageHandler";
 import { formatLocalDateShort } from "../../../../DateUtils";
@@ -18,6 +17,7 @@ import { PollOption } from "../../polls/PollOption";
 import { Caption } from "../../typography/Caption";
 import AccessibleButton from "../../elements/AccessibleButton.tsx";
 
+import { StopCircle as PollsEndIcon } from "lucide-react";
 interface Props {
     event: MatrixEvent;
     poll: Poll;

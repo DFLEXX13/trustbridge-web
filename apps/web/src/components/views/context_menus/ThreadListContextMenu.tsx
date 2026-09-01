@@ -8,7 +8,6 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { useCallback, useContext, useEffect } from "react";
 import { type MatrixEvent } from "matrix-js-sdk/src/matrix";
-import { LinkIcon, OverflowHorizontalIcon, VisibilityOnIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { type ButtonEvent } from "../elements/AccessibleButton";
 import dis from "../../../dispatcher/dispatcher";
@@ -21,6 +20,7 @@ import IconizedContextMenu, { IconizedContextMenuOption, IconizedContextMenuOpti
 import { type ViewRoomPayload } from "../../../dispatcher/payloads/ViewRoomPayload";
 import { SDKContext } from "../../../contexts/SDKContext.ts";
 
+import { Link as LinkIcon, MoreHorizontal as OverflowHorizontalIcon, Eye as VisibilityOnIcon } from "lucide-react";
 export interface ThreadListContextMenuProps {
     mxEvent: MatrixEvent;
     permalinkCreator?: RoomPermalinkCreator;

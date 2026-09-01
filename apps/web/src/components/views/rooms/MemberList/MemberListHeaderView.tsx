@@ -7,13 +7,13 @@ Please see LICENSE files in the repository root for full details.
 
 import { Search, Text, Button, Tooltip, InlineSpinner } from "@vector-im/compound-web";
 import React from "react";
-import InviteIcon from "@vector-im/compound-design-tokens/assets/web/icons/user-add";
-import { UserAddIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { Flex } from "@element-hq/web-shared-components";
 
 import { type MemberListViewState } from "../../../viewmodels/memberlist/MemberListViewModel";
 import { _t } from "../../../../languageHandler";
 
+import { UserPlus as InviteIcon, UserPlus as UserAddIcon } from "lucide-react";
 interface TooltipProps {
     canInvite: boolean;
     children: React.ReactNode;

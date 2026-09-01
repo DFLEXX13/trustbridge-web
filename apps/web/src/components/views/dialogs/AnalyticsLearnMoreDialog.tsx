@@ -7,7 +7,6 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React from "react";
-import { CheckCircleIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import BaseDialog from "./BaseDialog";
 import { _t } from "../../../languageHandler";
@@ -16,6 +15,7 @@ import Modal, { type ComponentProps, type IHandle } from "../../../Modal";
 import SdkConfig from "../../../SdkConfig";
 import ExternalLink from "../elements/ExternalLink";
 
+import { CheckCircle2 as CheckCircleIcon } from "lucide-react";
 function getPolicyUrl(): string | undefined {
     return SdkConfig.get("privacy_policy_url");
 }

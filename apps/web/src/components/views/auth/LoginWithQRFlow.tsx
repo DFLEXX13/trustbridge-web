@@ -8,12 +8,9 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { type ComponentProps, createRef, type JSX, type ReactNode } from "react";
 import { ClientRendezvousFailureReason, MSC4108FailureReason, RendezvousIntent } from "matrix-js-sdk/src/rendezvous";
-import ChevronLeftIcon from "@vector-im/compound-design-tokens/assets/web/icons/chevron-left";
-import CheckCircleSolidIcon from "@vector-im/compound-design-tokens/assets/web/icons/check-circle-solid";
-import ErrorIcon from "@vector-im/compound-design-tokens/assets/web/icons/error-solid";
+
 import { BigIcon, Button, Heading, MFAInput, Text } from "@vector-im/compound-web";
 import classNames from "classnames";
-import { LockSolidIcon, MobileIcon, QrCodeIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 import AccessibleButton from "../elements/AccessibleButton";
@@ -24,6 +21,14 @@ import SdkConfig from "../../../SdkConfig";
 import { type FailureReason, LoginWithQRFailureReason } from "./LoginWithQR";
 import { ErrorMessage } from "../../structures/ErrorMessage";
 
+import {
+    ChevronLeft as ChevronLeftIcon,
+    CheckCircle2 as CheckCircleSolidIcon,
+    AlertCircle as ErrorIcon,
+    Lock as LockSolidIcon,
+    Smartphone as MobileIcon,
+    QrCode as QrCodeIcon,
+} from "lucide-react";
 interface Props {
     /**
      * The phase the flow is to be rendered in

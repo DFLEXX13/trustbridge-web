@@ -8,10 +8,10 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { type FC } from "react";
 import classNames from "classnames";
-import { GroupIcon, VideoCallSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 
+import { Users as GroupIcon, Video as VideoCallSolidIcon } from "lucide-react";
 interface Props {
     text: string;
     active: boolean;

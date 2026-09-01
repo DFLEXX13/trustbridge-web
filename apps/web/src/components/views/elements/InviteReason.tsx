@@ -8,12 +8,12 @@ Please see LICENSE files in the repository root for full details.
 
 import classNames from "classnames";
 import React from "react";
-import { VisibilityOnIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { sanitizedHtmlNode } from "../../../HtmlUtils";
 import { _t } from "../../../languageHandler";
 import AccessibleButton from "./AccessibleButton";
 
+import { Eye as VisibilityOnIcon } from "lucide-react";
 interface IProps {
     reason: string;
     htmlReason?: string;

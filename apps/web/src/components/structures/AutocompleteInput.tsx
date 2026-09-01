@@ -15,7 +15,6 @@ import React, {
     type ReactElement,
 } from "react";
 import classNames from "classnames";
-import { SearchIcon, CloseIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import type Autocompleter from "../../autocomplete/AutocompleteProvider";
 import { Key } from "../../Keyboard";
@@ -23,6 +22,7 @@ import { type ICompletion } from "../../autocomplete/Autocompleter";
 import AccessibleButton from "../../components/views/elements/AccessibleButton";
 import useFocus from "../../hooks/useFocus";
 
+import { Search as SearchIcon, X as CloseIcon } from "lucide-react";
 interface AutocompleteInputProps {
     provider: Autocompleter;
     placeholder: string;

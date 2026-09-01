@@ -7,8 +7,8 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React from "react";
-import { WarningIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
+import { AlertTriangle as WarningIcon } from "lucide-react";
 interface IProps {
     errorMsg?: string;
 }

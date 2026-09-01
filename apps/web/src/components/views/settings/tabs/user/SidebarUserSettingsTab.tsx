@@ -7,7 +7,6 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React, { type ChangeEvent, useMemo } from "react";
-import { VideoCallSolidIcon, HomeSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../../../languageHandler";
 import SettingsStore from "../../../../../settings/SettingsStore";
@@ -21,6 +20,7 @@ import { SettingsSection } from "../../shared/SettingsSection";
 import { SettingsSubsection } from "../../shared/SettingsSubsection";
 import SdkConfig from "../../../../../SdkConfig";
 
+import { Video as VideoCallSolidIcon, Home as HomeSolidIcon } from "lucide-react";
 type InteractionName = "WebSettingsSidebarTabSpacesCheckbox" | "WebQuickSettingsPinToSidebarCheckbox";
 
 export const onMetaSpaceChangeFactory =

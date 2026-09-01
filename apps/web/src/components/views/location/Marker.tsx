@@ -9,11 +9,11 @@ Please see LICENSE files in the repository root for full details.
 import React, { type JSX, type ReactNode, type Ref, useState } from "react";
 import classNames from "classnames";
 import { type RoomMember } from "matrix-js-sdk/src/matrix";
-import LocationIcon from "@vector-im/compound-design-tokens/assets/web/icons/location-pin-solid";
 
 import { getUserNameColorClass } from "../../../utils/FormattingUtils";
 import MemberAvatar from "../avatars/MemberAvatar";
 
+import { MapPin as LocationIcon } from "lucide-react";
 interface Props {
     id?: string;
     // renders MemberAvatar when provided

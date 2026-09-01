@@ -8,15 +8,6 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { type JSX, useContext } from "react";
 import { type Room, EventType, RoomType } from "matrix-js-sdk/src/matrix";
-import {
-    HomeSolidIcon,
-    PlusIcon,
-    SettingsSolidIcon,
-    LeaveIcon,
-    SearchIcon,
-    PreferencesIcon,
-    UserAddIcon,
-} from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { type IProps as IContextMenuProps } from "../../structures/ContextMenu";
 import IconizedContextMenu, { IconizedContextMenuOption, IconizedContextMenuOptionList } from "./IconizedContextMenu";
@@ -42,6 +33,15 @@ import { UIComponent } from "../../../settings/UIFeature";
 import PosthogTrackers from "../../../PosthogTrackers";
 import { type ViewRoomPayload } from "../../../dispatcher/payloads/ViewRoomPayload";
 
+import {
+    Home as HomeSolidIcon,
+    Plus as PlusIcon,
+    Settings as SettingsSolidIcon,
+    LogOut as LeaveIcon,
+    Search as SearchIcon,
+    Settings2 as PreferencesIcon,
+    UserPlus as UserAddIcon,
+} from "lucide-react";
 interface IProps extends IContextMenuProps {
     space?: Room;
     hideHeader?: boolean;

@@ -8,7 +8,6 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { useMemo, useState } from "react";
 import { type Room, JoinRule } from "matrix-js-sdk/src/matrix";
-import { InfoSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 import DialogButtons from "../elements/DialogButtons";
@@ -18,6 +17,7 @@ import { filterBoolean } from "../../../utils/arrays";
 import { isOnlyAdmin } from "../../../utils/membership";
 import { SDKContextClass } from "../../../contexts/SDKContextClass.ts";
 
+import { Info as InfoSolidIcon } from "lucide-react";
 interface IProps {
     space: Room;
     onFinished(this: void, leave: boolean, rooms?: Room[]): void;

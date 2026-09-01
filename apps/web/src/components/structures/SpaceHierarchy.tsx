@@ -40,7 +40,7 @@ import classNames from "classnames";
 import { sortBy, uniqBy } from "lodash";
 import { logger } from "matrix-js-sdk/src/logger";
 import { KnownMembership, type SpaceChildEventContent } from "matrix-js-sdk/src/types";
-import { ChevronDownIcon, CheckIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { LinkedText } from "@element-hq/web-shared-components";
 
 import defaultDispatcher from "../../dispatcher/dispatcher";
@@ -74,6 +74,7 @@ import { filterBoolean } from "../../utils/arrays.ts";
 import { type RoomViewStore } from "../../stores/RoomViewStore.tsx";
 import RoomContext from "../../contexts/RoomContext.ts";
 
+import { ChevronDown as ChevronDownIcon, Check as CheckIcon } from "lucide-react";
 interface IProps {
     space: Room;
     initialText?: string;

@@ -6,7 +6,6 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React, { type JSX, useEffect, useRef, useState } from "react";
-import { ChatSolidIcon, BugIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import QuestionDialog from "./QuestionDialog";
 import { _t } from "../../../languageHandler";
@@ -21,6 +20,7 @@ import { useStateToggle } from "../../../hooks/useStateToggle";
 import StyledCheckbox from "../elements/StyledCheckbox";
 import ExternalLink from "../elements/ExternalLink";
 
+import { MessageCircle as ChatSolidIcon, Bug as BugIcon } from "lucide-react";
 interface IProps {
     feature?: string;
     onFinished(): void;

@@ -8,7 +8,7 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { type JSX, useContext } from "react";
 import classNames from "classnames";
-import { SettingsSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { IconButton, Text, Tooltip } from "@vector-im/compound-web";
 
 import { _t } from "../../../languageHandler";
@@ -22,6 +22,7 @@ import Modal from "../../../Modal";
 import DevtoolsDialog from "../dialogs/DevtoolsDialog";
 import { SDKContext } from "../../../contexts/SDKContext.ts";
 
+import { Settings as SettingsSolidIcon } from "lucide-react";
 const QuickSettingsButton: React.FC<{
     isPanelCollapsed: boolean;
 }> = ({ isPanelCollapsed = false }) => {

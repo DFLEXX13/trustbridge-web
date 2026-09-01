@@ -8,13 +8,13 @@ Please see LICENSE files in the repository root for full details.
 
 import classNames from "classnames";
 import React, { type JSX, useContext } from "react";
-import { ReactionIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 import ContextMenu, { aboveLeftOf, type MenuProps, useContextMenu } from "../../structures/ContextMenu";
 import { CollapsibleButton, OverflowMenuContext } from "./CollapsibleButton";
 import { EmojiPickerWithRecents } from "../../../emojipicker/EmojiPickerWithRecents";
 
+import { Smile as ReactionIcon } from "lucide-react";
 interface IEmojiButtonProps {
     addEmoji: (unicode: string) => boolean;
     menuPosition?: MenuProps;

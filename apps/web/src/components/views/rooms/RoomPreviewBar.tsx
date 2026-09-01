@@ -15,7 +15,6 @@ import {
     RoomViewLifecycle,
 } from "@matrix-org/react-sdk-module-api/lib/lifecycles/RoomViewLifecycle";
 import { Button } from "@vector-im/compound-web";
-import { AskToJoinIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { MatrixClientPeg } from "../../../MatrixClientPeg";
 import dis from "../../../dispatcher/dispatcher";
@@ -33,6 +32,7 @@ import { ModuleRunner } from "../../../modules/ModuleRunner";
 import Field from "../elements/Field";
 import { ModuleApi } from "../../../modules/Api.ts";
 
+import { DoorOpen as AskToJoinIcon } from "lucide-react";
 const MemberEventHtmlReasonField = "io.element.html_reason";
 
 enum MessageCase {

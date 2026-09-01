@@ -8,11 +8,6 @@ Please see LICENSE files in the repository root for full details.
 
 import { type Room } from "matrix-js-sdk/src/matrix";
 import React, { Fragment, type JSX, type ReactNode, useState } from "react";
-import {
-    NotificationsOffSolidIcon,
-    OverflowHorizontalIcon,
-    NotificationsSolidIcon,
-} from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { ContextMenuTooltipButton } from "../../../../accessibility/context_menu/ContextMenuTooltipButton";
 import { useNotificationState } from "../../../../hooks/useRoomNotificationState";
@@ -26,6 +21,11 @@ import { ChevronFace, type MenuProps } from "../../../structures/ContextMenu";
 import { shouldShowComponent } from "../../../../customisations/helpers/UIComponents";
 import { UIComponent } from "../../../../settings/UIFeature";
 
+import {
+    BellOff as NotificationsOffSolidIcon,
+    MoreHorizontal as OverflowHorizontalIcon,
+    BellRing as NotificationsSolidIcon,
+} from "lucide-react";
 interface Props {
     room: Room;
 }

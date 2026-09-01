@@ -9,10 +9,6 @@ import React, { type JSX, type ReactNode } from "react";
 import classNames from "classnames";
 import { type RoomMember, type Room } from "matrix-js-sdk/src/matrix";
 import { MenuItem } from "@vector-im/compound-web";
-import CloseIcon from "@vector-im/compound-design-tokens/assets/web/icons/close";
-import ChatProblemIcon from "@vector-im/compound-design-tokens/assets/web/icons/chat-problem";
-import VisibilityOffIcon from "@vector-im/compound-design-tokens/assets/web/icons/visibility-off";
-import LeaveIcon from "@vector-im/compound-design-tokens/assets/web/icons/leave";
 
 import { _t } from "../../../../languageHandler";
 import { type IPowerLevelsContent } from "../UserInfo";
@@ -22,6 +18,12 @@ import { useBanButtonViewModel } from "../../../viewmodels/right_panel/user_info
 import { useRoomKickButtonViewModel } from "../../../viewmodels/right_panel/user_info/admin/UserInfoKickButtonViewModel";
 import { useRedactMessagesButtonViewModel } from "../../../viewmodels/right_panel/user_info/admin/UserInfoRedactButtonViewModel";
 
+import {
+    X as CloseIcon,
+    MessageCircleWarning as ChatProblemIcon,
+    EyeOff as VisibilityOffIcon,
+    LogOut as LeaveIcon,
+} from "lucide-react";
 const Container: React.FC<{
     children: ReactNode;
     className?: string;

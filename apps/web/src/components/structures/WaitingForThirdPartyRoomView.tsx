@@ -8,7 +8,7 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { type RefObject } from "react";
 import { type MatrixEvent } from "matrix-js-sdk/src/matrix";
-import { LockSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { EventTileBubble } from "@element-hq/web-shared-components";
 
 import type ResizeNotifier from "../../utils/ResizeNotifier";
@@ -21,6 +21,7 @@ import { _t } from "../../languageHandler";
 import SdkConfig from "../../SdkConfig";
 import { useScopedRoomContext } from "../../contexts/ScopedRoomContext.tsx";
 
+import { Lock as LockSolidIcon } from "lucide-react";
 interface Props {
     roomView: RefObject<HTMLElement | null>;
     resizeNotifier: ResizeNotifier;

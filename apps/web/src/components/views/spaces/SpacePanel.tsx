@@ -24,13 +24,7 @@ import React, {
 import { DragDropContext, Draggable, Droppable, type DroppableProvidedProps } from "react-beautiful-dnd";
 import classNames from "classnames";
 import { type Room } from "matrix-js-sdk/src/matrix";
-import {
-    HomeSolidIcon,
-    RoomIcon,
-    VideoCallSolidIcon,
-    PlusIcon,
-    ChevronRightIcon,
-} from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { useCreateAutoDisposedViewModel, UserMenu } from "@element-hq/web-shared-components";
 
 import { _t } from "../../../languageHandler";
@@ -80,6 +74,13 @@ import { SDKContext } from "../../../contexts/SDKContext.ts";
 import { OwnProfileStore } from "../../../stores/OwnProfileStore.ts";
 import { type SDKContextClass } from "../../../contexts/SDKContextClass.ts";
 
+import {
+    Home as HomeSolidIcon,
+    MessageSquare as RoomIcon,
+    Video as VideoCallSolidIcon,
+    Plus as PlusIcon,
+    ChevronRight as ChevronRightIcon,
+} from "lucide-react";
 const useSpaces = (): [Room[], MetaSpace[], Room[], SpaceKey] => {
     const sdkContext = useContext(SDKContext);
     const invites = useEventEmitterState<Room[]>(sdkContext.spaceStore, UPDATE_INVITED_SPACES, () => {

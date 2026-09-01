@@ -8,11 +8,11 @@ Please see LICENSE files in the repository root for full details.
 
 import classNames from "classnames";
 import React from "react";
-import { ShieldIcon, ErrorSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import InactiveIcon from "../../../../../res/img/element-icons/settings/inactive.svg?react";
 import { DeviceSecurityVariation } from "./types";
 
+import { Shield as ShieldIcon, AlertCircle as ErrorSolidIcon } from "lucide-react";
 interface Props {
     variation: DeviceSecurityVariation;
     heading: string;

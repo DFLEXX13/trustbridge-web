@@ -16,13 +16,7 @@ import {
     M_POLL_START,
 } from "matrix-js-sdk/src/matrix";
 import React, { type JSX, type ReactElement, type ReactNode, useContext } from "react";
-import {
-    MicOnIcon,
-    OverflowHorizontalIcon,
-    PollsIcon,
-    StickerIcon,
-    TextFormattingIcon,
-} from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { UploadButton, useViewModel } from "@element-hq/web-shared-components";
 
 import { _t } from "../../../languageHandler";
@@ -45,6 +39,13 @@ import AccessibleButton, { type ButtonEvent } from "../elements/AccessibleButton
 import { useScopedRoomContext } from "../../../contexts/ScopedRoomContext.tsx";
 import { useRoomUploadViewModel } from "../../../viewmodels/room/RoomUploadViewModel.tsx";
 
+import {
+    Mic as MicOnIcon,
+    MoreHorizontal as OverflowHorizontalIcon,
+    BarChart2 as PollsIcon,
+    Sticker as StickerIcon,
+    Type as TextFormattingIcon,
+} from "lucide-react";
 interface IProps {
     addEmoji: (emoji: string) => boolean;
     haveRecording: boolean;

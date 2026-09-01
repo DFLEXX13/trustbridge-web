@@ -8,7 +8,6 @@ Please see LICENSE files in the repository root for full details.
 import React from "react";
 import { type RoomMember, type User, type Room } from "matrix-js-sdk/src/matrix";
 import { MenuItem } from "@vector-im/compound-web";
-import { DeleteIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../../languageHandler";
 import { useUserInfoBasicViewModel } from "../../../viewmodels/right_panel/user_info/UserInfoBasicViewModel";
@@ -19,6 +18,7 @@ import Spinner from "../../elements/Spinner";
 import { UserInfoAdminToolsContainer } from "./UserInfoAdminToolsContainer";
 import { UserInfoBasicOptionsView } from "./UserInfoBasicOptionsView";
 
+import { Trash2 as DeleteIcon } from "lucide-react";
 /**
  * There are two types of components that can be displayed in the right panel concerning userinfo
  * Basic info or Encryption Panel

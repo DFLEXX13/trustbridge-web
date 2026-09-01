@@ -8,13 +8,14 @@ Please see LICENSE files in the repository root for full details.
 import React from "react";
 import { type User, type RoomMember } from "matrix-js-sdk/src/matrix";
 import { Text, Button, InlineSpinner, Badge } from "@vector-im/compound-web";
-import { VerifiedIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { Flex } from "@element-hq/web-shared-components";
 
 import { useUserInfoVerificationViewModel } from "../../../viewmodels/right_panel/user_info/UserInfoHeaderVerificationViewModel";
 import { type IDevice } from "../UserInfo";
 import { _t } from "../../../../languageHandler";
 
+import { BadgeCheck as VerifiedIcon } from "lucide-react";
 export const UserInfoHeaderVerificationView: React.FC<{
     member: User | RoomMember;
     devices: IDevice[];

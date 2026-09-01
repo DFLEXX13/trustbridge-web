@@ -8,19 +8,19 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { createRef, type JSX } from "react";
 import classNames from "classnames";
-import {
-    BoldIcon,
-    ItalicIcon,
-    StrikethroughIcon,
-    InlineCodeIcon,
-    QuoteIcon,
-    LinkIcon,
-} from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 import { RovingAccessibleButton } from "../../../accessibility/RovingTabIndex";
 import Toolbar from "../../../accessibility/Toolbar";
 
+import {
+    Bold as BoldIcon,
+    Italic as ItalicIcon,
+    Strikethrough as StrikethroughIcon,
+    Code as InlineCodeIcon,
+    Quote as QuoteIcon,
+    Link as LinkIcon,
+} from "lucide-react";
 export enum Formatting {
     Bold = "bold",
     Italics = "italics",

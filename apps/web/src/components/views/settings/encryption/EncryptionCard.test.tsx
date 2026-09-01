@@ -10,10 +10,10 @@
 import React from "react";
 import { describe, it, expect } from "vitest";
 import { render } from "test-utils-rtl";
-import KeyIcon from "@vector-im/compound-design-tokens/assets/web/icons/key-solid";
 
 import { EncryptionCard } from "./EncryptionCard";
 
+import { KeyRound as KeyIcon } from "lucide-react";
 describe("<EncryptionCard />", () => {
     it("should render", () => {
         const { asFragment } = render(

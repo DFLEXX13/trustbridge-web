@@ -8,13 +8,13 @@ Please see LICENSE files in the repository root for full details.
 
 import React from "react";
 import classNames from "classnames";
-import { ErrorIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 import { getLocationShareErrorMessage, type LocationShareError } from "../../../utils/location";
 import AccessibleButton from "../elements/AccessibleButton";
 import Heading from "../typography/Heading";
 
+import { AlertCircle as ErrorIcon } from "lucide-react";
 export interface MapErrorProps {
     error: LocationShareError;
     onFinished?: () => void;

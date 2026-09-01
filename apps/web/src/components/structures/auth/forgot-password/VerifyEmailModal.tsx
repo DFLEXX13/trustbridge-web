@@ -8,7 +8,6 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { type ReactNode } from "react";
 import { Tooltip } from "@vector-im/compound-web";
-import { CloseIcon, RestartIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../../languageHandler";
 import AccessibleButton from "../../../views/elements/AccessibleButton";
@@ -16,6 +15,7 @@ import EmailPromptIcon from "../../../../../res/img/element-icons/email-prompt.s
 import { useTimeoutToggle } from "../../../../hooks/useTimeoutToggle";
 import { ErrorMessage } from "../../ErrorMessage";
 
+import { X as CloseIcon, RotateCw as RestartIcon } from "lucide-react";
 interface Props {
     email: string;
     errorText: ReactNode | null;

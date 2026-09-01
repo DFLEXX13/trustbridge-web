@@ -7,13 +7,13 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React, { type ChangeEvent, useRef, useState } from "react";
-import { TakePhotoSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 import AccessibleButton from "../elements/AccessibleButton";
 import Field from "../elements/Field";
 import { chromeFileInputFix } from "../../../utils/BrowserWorkarounds";
 
+import { Camera as TakePhotoSolidIcon } from "lucide-react";
 interface IProps {
     avatarUrl?: string;
     avatarDisabled?: boolean;

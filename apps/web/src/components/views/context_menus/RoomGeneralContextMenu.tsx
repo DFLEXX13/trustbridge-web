@@ -9,16 +9,6 @@ Please see LICENSE files in the repository root for full details.
 import { logger } from "matrix-js-sdk/src/logger";
 import { type Room, RoomEvent } from "matrix-js-sdk/src/matrix";
 import React, { type JSX, useContext } from "react";
-import {
-    FavouriteSolidIcon,
-    LinkIcon,
-    SettingsSolidIcon,
-    ArrowDownIcon,
-    MarkAsReadIcon,
-    MarkAsUnreadIcon,
-    LeaveIcon,
-    UserAddIcon,
-} from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { KeyBindingAction } from "../../../accessibility/KeyboardShortcuts";
 import RoomListActions from "../../../actions/RoomListActions";
@@ -45,6 +35,16 @@ import { DeveloperToolsOption } from "./DeveloperToolsOption";
 import { useSettingValue } from "../../../hooks/useSettings";
 import { getTagsForRoom } from "../../../utils/room/getTagsForRoom";
 
+import {
+    Star as FavouriteSolidIcon,
+    Link as LinkIcon,
+    Settings as SettingsSolidIcon,
+    ArrowDown as ArrowDownIcon,
+    MailOpen as MarkAsReadIcon,
+    Mail as MarkAsUnreadIcon,
+    LogOut as LeaveIcon,
+    UserPlus as UserAddIcon,
+} from "lucide-react";
 export interface RoomGeneralContextMenuProps extends IContextMenuProps {
     room: Room;
     /**

@@ -12,7 +12,7 @@ import { type Room, EventType } from "matrix-js-sdk/src/matrix";
 import { KnownMembership } from "matrix-js-sdk/src/types";
 import { sleep } from "matrix-js-sdk/src/utils";
 import { logger } from "matrix-js-sdk/src/logger";
-import { CheckIcon, ErrorIcon, RestartIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { AutoHideScrollbar } from "@element-hq/web-shared-components";
 
 import { _t, _td } from "../../../languageHandler";
@@ -36,6 +36,7 @@ import { filterBoolean } from "../../../utils/arrays";
 import { type NonEmptyArray } from "../../../@types/common";
 import { SDKContextClass } from "../../../contexts/SDKContextClass.ts";
 
+import { Check as CheckIcon, AlertCircle as ErrorIcon, RotateCw as RestartIcon } from "lucide-react";
 // These values match CSS
 const ROW_HEIGHT = 32 + 12;
 const HEADER_HEIGHT = 15;

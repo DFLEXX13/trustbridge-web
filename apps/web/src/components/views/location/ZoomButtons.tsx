@@ -7,12 +7,12 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React from "react";
-import { PlusIcon, MinusIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import type * as maplibregl from "maplibre-gl";
 import { _t } from "../../../languageHandler";
 import AccessibleButton from "../elements/AccessibleButton";
 
+import { Plus as PlusIcon, Minus as MinusIcon } from "lucide-react";
 interface Props {
     map: maplibregl.Map;
 }

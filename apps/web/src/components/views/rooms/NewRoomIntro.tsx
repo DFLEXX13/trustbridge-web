@@ -9,7 +9,7 @@ Please see LICENSE files in the repository root for full details.
 import React, { type JSX, useContext, useMemo } from "react";
 import { EventType, type Room, type User, type MatrixClient } from "matrix-js-sdk/src/matrix";
 import { KnownMembership } from "matrix-js-sdk/src/types";
-import { ErrorSolidIcon, UserAddIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { EventTileBubble, LinkedText } from "@element-hq/web-shared-components";
 
 import DMRoomMap from "../../../utils/DMRoomMap";
@@ -32,6 +32,7 @@ import { useTopic } from "../../../hooks/room/useTopic";
 import { topicToHtml } from "../../../HtmlUtils";
 import { SDKContext } from "../../../contexts/SDKContext.ts";
 
+import { AlertCircle as ErrorSolidIcon, UserPlus as UserAddIcon } from "lucide-react";
 function hasExpectedEncryptionSettings(matrixClient: MatrixClient, room: Room): boolean {
     const isEncrypted: boolean = matrixClient.isRoomEncrypted(room.roomId);
     const isPublic: boolean = room.getJoinRule() === "public";

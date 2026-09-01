@@ -11,7 +11,6 @@ Please see LICENSE files in the repository root for full details.
 import React from "react";
 import { type RoomMember } from "matrix-js-sdk/src/matrix";
 import { Tooltip } from "@vector-im/compound-web";
-import { HelpIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 import SdkConfig from "../../../SdkConfig";
@@ -23,6 +22,7 @@ import Heading from "../typography/Heading";
 import AccessibleButton from "./AccessibleButton";
 import { parseUrl } from "../../../utils/UrlUtils";
 
+import { HelpCircle as HelpIcon } from "lucide-react";
 interface IProps {
     url: string;
     creatorUserId: string;

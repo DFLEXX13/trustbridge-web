@@ -11,7 +11,7 @@ import { sleep } from "matrix-js-sdk/src/utils";
 import { type Room, RoomEvent, type EmptyObject } from "matrix-js-sdk/src/matrix";
 import { KnownMembership, type Membership } from "matrix-js-sdk/src/types";
 import { logger } from "matrix-js-sdk/src/logger";
-import { WarningIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { Form } from "@vector-im/compound-web";
 
 import { _t } from "../../../../../languageHandler";
@@ -35,6 +35,7 @@ import { useOwnDevices } from "../../devices/useOwnDevices";
 import { DiscoverySettings } from "../../discovery/DiscoverySettings";
 import SetIntegrationManager from "../../SetIntegrationManager";
 
+import { AlertTriangle as WarningIcon } from "lucide-react";
 interface IIgnoredUserProps {
     userId: string;
     onUnignored: (userId: string) => void;

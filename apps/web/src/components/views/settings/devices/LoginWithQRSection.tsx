@@ -8,7 +8,7 @@ Please see LICENSE files in the repository root for full details.
 
 import React from "react";
 import { type MatrixClient } from "matrix-js-sdk/src/matrix";
-import QrCodeIcon from "@vector-im/compound-design-tokens/assets/web/icons/qr-code";
+
 import { Text } from "@vector-im/compound-web";
 import { isSignInWithQRAvailable } from "matrix-js-sdk/src/rendezvous";
 
@@ -18,6 +18,7 @@ import { SettingsSubsection } from "../shared/SettingsSubsection";
 import { useMatrixClientContext } from "../../../../contexts/MatrixClientContext";
 import { useAsyncMemo } from "../../../../hooks/useAsyncMemo";
 
+import { QrCode as QrCodeIcon } from "lucide-react";
 interface IProps {
     onShowQr: () => void;
     isCrossSigningReady?: boolean;

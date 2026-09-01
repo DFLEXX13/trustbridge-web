@@ -9,13 +9,13 @@ import React, { type JSX, useState } from "react";
 import classNames from "classnames";
 import { type DOMNode, type Element as ParserElement, domToReact } from "html-react-parser";
 import { textContent, getInnerHTML } from "domutils";
-import { CollapseIcon, CopyIcon, ExpandIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { useSettingValue } from "../../../hooks/useSettings.ts";
 import { CopyTextButton } from "../elements/CopyableText.tsx";
 import AccessibleButton from "../elements/AccessibleButton.tsx";
 import { _t } from "../../../i18n";
 
+import { Minimize2 as CollapseIcon, Copy as CopyIcon, Maximize2 as ExpandIcon } from "lucide-react";
 const MAX_HIGHLIGHT_LENGTH = 4096;
 const MAX_LINES_BEFORE_COLLAPSE = 5;
 

@@ -11,7 +11,7 @@ Please see LICENSE files in the repository root for full details.
 import React, { type JSX, type ReactNode } from "react";
 import { logger } from "matrix-js-sdk/src/logger";
 import { sleep } from "matrix-js-sdk/src/utils";
-import { LockSolidIcon, CheckIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { Button, Form } from "@vector-im/compound-web";
 
 import { _t, _td } from "../../../languageHandler";
@@ -35,6 +35,7 @@ import Spinner from "../../views/elements/Spinner";
 import { formatSeconds } from "../../../DateUtils";
 import AutoDiscoveryUtils from "../../../utils/AutoDiscoveryUtils";
 
+import { Lock as LockSolidIcon, Check as CheckIcon } from "lucide-react";
 const emailCheckInterval = 2000;
 
 enum Phase {

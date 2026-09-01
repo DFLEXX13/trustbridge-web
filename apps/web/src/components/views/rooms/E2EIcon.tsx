@@ -10,12 +10,12 @@ Please see LICENSE files in the repository root for full details.
 import React, { type JSX, type ComponentProps, type CSSProperties } from "react";
 import classNames from "classnames";
 import { Tooltip } from "@vector-im/compound-web";
-import { ErrorSolidIcon, ShieldIcon, LockSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t, _td } from "../../../languageHandler";
 import AccessibleButton from "../elements/AccessibleButton";
 import { E2EStatus } from "../../../utils/ShieldUtils";
 
+import { AlertCircle as ErrorSolidIcon, Shield as ShieldIcon, Lock as LockSolidIcon } from "lucide-react";
 export const crossSigningUserTitles: { [key in E2EStatus]?: TranslationKey } = {
     [E2EStatus.Warning]: _td("encryption|cross_signing_user_warning"),
     [E2EStatus.Normal]: _td("encryption|cross_signing_user_normal"),

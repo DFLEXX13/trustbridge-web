@@ -11,16 +11,6 @@ import { type MatrixEvent } from "matrix-js-sdk/src/matrix";
 import { CallErrorCode, CallState } from "matrix-js-sdk/src/webrtc/call";
 import classNames from "classnames";
 import { Clock } from "@element-hq/web-shared-components";
-import {
-    EndCallIcon,
-    VideoCallDeclinedSolidIcon,
-    VideoCallMissedSolidIcon,
-    VideoCallSolidIcon,
-    VoiceCallMissedSolidIcon,
-    VoiceCallSolidIcon,
-    VolumeOffSolidIcon,
-    VolumeOnSolidIcon,
-} from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 import MemberAvatar from "../avatars/MemberAvatar";
@@ -30,6 +20,16 @@ import AccessibleButton from "../elements/AccessibleButton";
 import InfoTooltip, { InfoTooltipKind } from "../elements/InfoTooltip";
 import { formatPreciseDuration } from "../../../DateUtils";
 
+import {
+    PhoneOff as EndCallIcon,
+    PhoneOff as VideoCallDeclinedSolidIcon,
+    PhoneMissed as VideoCallMissedSolidIcon,
+    Video as VideoCallSolidIcon,
+    PhoneMissed as VoiceCallMissedSolidIcon,
+    Phone as VoiceCallSolidIcon,
+    VolumeX as VolumeOffSolidIcon,
+    Volume2 as VolumeOnSolidIcon,
+} from "lucide-react";
 const MAX_NON_NARROW_WIDTH = (450 / 70) * 100;
 
 interface IProps {

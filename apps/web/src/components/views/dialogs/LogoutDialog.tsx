@@ -10,10 +10,6 @@ Please see LICENSE files in the repository root for full details.
 import React, { type JSX } from "react";
 import { type MatrixClient } from "matrix-js-sdk/src/matrix";
 import { Button, Text } from "@vector-im/compound-web";
-import ErrorIcon from "@vector-im/compound-design-tokens/assets/web/icons/error-solid";
-import KeyIcon from "@vector-im/compound-design-tokens/assets/web/icons/key";
-import PopOutIcon from "@vector-im/compound-design-tokens/assets/web/icons/pop-out";
-import SignOutIcon from "@vector-im/compound-design-tokens/assets/web/icons/sign-out";
 
 import dis from "../../../dispatcher/dispatcher";
 import { type OpenToTabPayload } from "../../../dispatcher/payloads/OpenToTabPayload";
@@ -30,6 +26,12 @@ import { EncryptionCard } from "../settings/encryption/EncryptionCard";
 import { EncryptionCardButtons } from "../settings/encryption/EncryptionCardButtons";
 import { EncryptionCardEmphasisedContent } from "../settings/encryption/EncryptionCardEmphasisedContent";
 
+import {
+    AlertCircle as ErrorIcon,
+    Key as KeyIcon,
+    ExternalLink as PopOutIcon,
+    LogOut as SignOutIcon,
+} from "lucide-react";
 interface IProps {
     onFinished: (success: boolean) => void;
 }

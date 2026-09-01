@@ -9,12 +9,12 @@ Please see LICENSE files in the repository root for full details.
 import React, { type ReactNode } from "react";
 import classNames from "classnames";
 import { type PollAnswerSubevent } from "matrix-js-sdk/src/extensible_events_v1/PollStartEvent";
-import { CheckIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 import TrophyIcon from "../../../../res/img/element-icons/trophy.svg?react";
 import StyledRadioButton from "../elements/StyledRadioButton";
 
+import { Check as CheckIcon } from "lucide-react";
 type PollOptionContentProps = {
     answer: PollAnswerSubevent;
     voteCount: number;

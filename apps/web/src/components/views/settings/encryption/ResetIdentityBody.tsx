@@ -6,9 +6,7 @@
  */
 
 import { Button, InlineSpinner, VisualList, VisualListItem } from "@vector-im/compound-web";
-import CheckIcon from "@vector-im/compound-design-tokens/assets/web/icons/check";
-import InfoIcon from "@vector-im/compound-design-tokens/assets/web/icons/info";
-import ErrorIcon from "@vector-im/compound-design-tokens/assets/web/icons/error-solid";
+
 import React, { type JSX, useState } from "react";
 
 import { _t } from "../../../../languageHandler";
@@ -18,6 +16,7 @@ import { EncryptionCardButtons } from "./EncryptionCardButtons";
 import { EncryptionCardEmphasisedContent } from "./EncryptionCardEmphasisedContent";
 import { useMatrixClientContext } from "../../../../contexts/MatrixClientContext";
 
+import { Check as CheckIcon, Info as InfoIcon, AlertCircle as ErrorIcon } from "lucide-react";
 interface ResetIdentityBodyProps {
     /**
      * Called when the identity is reset.

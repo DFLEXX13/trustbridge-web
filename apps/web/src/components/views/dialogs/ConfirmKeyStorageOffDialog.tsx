@@ -6,9 +6,8 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React from "react";
-import ErrorIcon from "@vector-im/compound-design-tokens/assets/web/icons/error";
+
 import { Button } from "@vector-im/compound-web";
-import { PopOutIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 import defaultDispatcher from "../../../dispatcher/dispatcher";
@@ -19,6 +18,7 @@ import { Action } from "../../../dispatcher/actions";
 import { UserTab } from "./UserTab";
 import SdkConfig from "../../../SdkConfig";
 
+import { AlertCircle as ErrorIcon, ExternalLink as PopOutIcon } from "lucide-react";
 interface Props {
     onFinished: (dismissed: boolean) => void;
 }

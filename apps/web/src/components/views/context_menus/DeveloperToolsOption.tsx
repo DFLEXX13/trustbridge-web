@@ -7,13 +7,13 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React from "react";
-import { LabsIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import Modal from "../../../Modal";
 import DevtoolsDialog from "../dialogs/DevtoolsDialog";
 import { IconizedContextMenuOption } from "./IconizedContextMenu";
 import { _t } from "../../../languageHandler";
 
+import { FlaskConical as LabsIcon } from "lucide-react";
 interface Props {
     onFinished: () => void;
     roomId: string;

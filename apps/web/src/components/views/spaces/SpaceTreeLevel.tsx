@@ -21,11 +21,6 @@ import classNames from "classnames";
 import { type Room, RoomEvent } from "matrix-js-sdk/src/matrix";
 import { KnownMembership } from "matrix-js-sdk/src/types";
 import { type DraggableProvidedDragHandleProps } from "react-beautiful-dnd";
-import {
-    ChevronDownIcon,
-    ChevronRightIcon,
-    OverflowHorizontalIcon,
-} from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import RoomAvatar from "../avatars/RoomAvatar";
 import { type SpaceKey } from "../../../stores/spaces";
@@ -49,6 +44,11 @@ import { useRovingTabIndex } from "../../../accessibility/RovingTabIndex";
 import { KeyBindingAction } from "../../../accessibility/KeyboardShortcuts";
 import { SDKContext } from "../../../contexts/SDKContext.ts";
 
+import {
+    ChevronDown as ChevronDownIcon,
+    ChevronRight as ChevronRightIcon,
+    MoreHorizontal as OverflowHorizontalIcon,
+} from "lucide-react";
 type ButtonProps<T extends keyof HTMLElementTagNameMap> = Omit<
     AccessibleButtonProps<T>,
     "title" | "onClick" | "size" | "element" | "ref"

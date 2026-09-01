@@ -8,7 +8,6 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { type ChangeEvent } from "react";
 import { type Room } from "matrix-js-sdk/src/matrix";
-import { VisibilityOnIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t, _td } from "../../../languageHandler";
 import BaseDialog from "../dialogs/BaseDialog";
@@ -24,6 +23,7 @@ import { SettingsSection } from "../settings/shared/SettingsSection";
 import { SettingsSubsection, SettingsSubsectionText } from "../settings/shared/SettingsSubsection";
 import { useRoomName } from "../../../hooks/useRoomName.ts";
 
+import { Eye as VisibilityOnIcon } from "lucide-react";
 interface IProps {
     space: Room;
     onFinished(this: void): void;

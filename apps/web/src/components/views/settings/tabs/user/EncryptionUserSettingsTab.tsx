@@ -7,7 +7,6 @@
 
 import React, { type JSX, useState } from "react";
 import { Button, Separator } from "@vector-im/compound-web";
-import ComputerIcon from "@vector-im/compound-design-tokens/assets/web/icons/computer";
 
 import SettingsTab from "../SettingsTab";
 import { RecoveryPanel } from "../../encryption/RecoveryPanel";
@@ -27,6 +26,7 @@ import { DeleteKeyStoragePanel } from "../../encryption/DeleteKeyStoragePanel";
 import { DeviceListener, CurrentDeviceEvents, type DeviceState } from "../../../../../device-listener";
 import { useKeyStoragePanelViewModel } from "../../../../viewmodels/settings/encryption/KeyStoragePanelViewModel";
 
+import { Monitor as ComputerIcon } from "lucide-react";
 /**
  * The state in the encryption settings tab.
  *  - "main": The main panel with all the sections (Key storage, recovery, advanced).

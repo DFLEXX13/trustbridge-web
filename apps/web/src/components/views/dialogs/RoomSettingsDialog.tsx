@@ -10,17 +10,6 @@ Please see LICENSE files in the repository root for full details.
 
 import React from "react";
 import { RoomEvent, type Room, RoomStateEvent, type MatrixEvent, EventType } from "matrix-js-sdk/src/matrix";
-import {
-    AdminIcon,
-    GroupIcon,
-    LockIcon,
-    PollsIcon,
-    SettingsIcon,
-    VoiceCallIcon,
-    NotificationsIcon,
-    AdvancedSettingsIcon,
-    TreeIcon,
-} from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import TabbedView, { Tab } from "../../structures/TabbedView";
 import { _t, _td } from "../../../languageHandler";
@@ -47,6 +36,17 @@ import { type SDKContextClass } from "../../../contexts/SDKContextClass";
 import { RoomSettingsTab } from "./RoomSettingsDialog-tab.ts";
 import SdkConfig from "../../../SdkConfig";
 
+import {
+    ShieldCheck as AdminIcon,
+    Users as GroupIcon,
+    Lock as LockIcon,
+    BarChart2 as PollsIcon,
+    Settings as SettingsIcon,
+    Phone as VoiceCallIcon,
+    Bell as NotificationsIcon,
+    SlidersHorizontal as AdvancedSettingsIcon,
+    ListTree as TreeIcon,
+} from "lucide-react";
 interface IProps {
     roomId: string;
     onFinished: (success?: boolean) => void;

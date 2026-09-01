@@ -8,7 +8,6 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React from "react";
-import { ErrorIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import dis from "../../../../dispatcher/dispatcher";
 import { _t } from "../../../../languageHandler";
@@ -18,6 +17,7 @@ import BaseDialog from "../../../../components/views/dialogs/BaseDialog";
 import DialogButtons from "../../../../components/views/elements/DialogButtons";
 import { type OpenToTabPayload } from "../../../../dispatcher/payloads/OpenToTabPayload";
 
+import { AlertCircle as ErrorIcon } from "lucide-react";
 interface IProps {
     onFinished(): void;
 }

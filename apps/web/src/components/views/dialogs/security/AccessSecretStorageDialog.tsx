@@ -7,19 +7,19 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import { Button, PasswordInput } from "@vector-im/compound-web";
-import LockSolidIcon from "@vector-im/compound-design-tokens/assets/web/icons/lock-solid";
+
 import { debounce } from "lodash";
 import classNames from "classnames";
 import React, { type ChangeEvent, type FormEvent, type ReactNode } from "react";
 import { type SecretStorage } from "matrix-js-sdk/src/matrix";
 import { Flex } from "@element-hq/web-shared-components";
-import { ErrorSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../../languageHandler";
 import { EncryptionCard } from "../../settings/encryption/EncryptionCard";
 import { EncryptionCardButtons } from "../../settings/encryption/EncryptionCardButtons";
 import BaseDialog from "../BaseDialog";
 
+import { Lock as LockSolidIcon, AlertCircle as ErrorSolidIcon } from "lucide-react";
 // Don't shout at the user that their key is invalid every time they type a key: wait a short time
 const VALIDATION_THROTTLE_MS = 200;
 

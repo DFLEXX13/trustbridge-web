@@ -7,7 +7,7 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React, { type JSX, useContext, useState } from "react";
-import { ChatSolidIcon, ExploreIcon, GroupIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { AutoHideScrollbar } from "@element-hq/web-shared-components";
 
 import { getHomePageUrl } from "../../utils/pages";
@@ -25,6 +25,7 @@ import MiniAvatarUploader, { AVATAR_SIZE } from "../views/elements/MiniAvatarUpl
 import PosthogTrackers from "../../PosthogTrackers";
 import EmbeddedPage from "./EmbeddedPage";
 
+import { MessageCircle as ChatSolidIcon, Compass as ExploreIcon, Users as GroupIcon } from "lucide-react";
 const onClickSendDm = (ev: ButtonEvent): void => {
     PosthogTrackers.trackInteraction("WebHomeCreateChatButton", ev);
     dis.dispatch({ action: Action.CreateChat });

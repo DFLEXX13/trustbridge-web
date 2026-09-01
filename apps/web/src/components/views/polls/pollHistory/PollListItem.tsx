@@ -9,12 +9,12 @@ Please see LICENSE files in the repository root for full details.
 import React from "react";
 import { type PollStartEvent } from "matrix-js-sdk/src/extensible_events_v1/PollStartEvent";
 import { type MatrixEvent } from "matrix-js-sdk/src/matrix";
-import { PollsIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { formatLocalDateShort } from "../../../../DateUtils";
 import { _t } from "../../../../languageHandler";
 import AccessibleButton from "../../elements/AccessibleButton.tsx";
 
+import { BarChart2 as PollsIcon } from "lucide-react";
 interface Props {
     event: MatrixEvent;
     onClick: () => void;

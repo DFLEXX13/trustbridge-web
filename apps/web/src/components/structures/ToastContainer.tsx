@@ -10,11 +10,11 @@ import React from "react";
 import classNames from "classnames";
 import { IconButton, Text } from "@vector-im/compound-web";
 import { type EmptyObject } from "matrix-js-sdk/src/matrix";
-import { CloseIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import ToastStore, { type IToast } from "../../stores/ToastStore";
 import { _t } from "../../languageHandler";
 
+import { X as CloseIcon } from "lucide-react";
 interface IState {
     toasts: IToast<any>[];
 }

@@ -20,28 +20,6 @@ import {
     Thread,
     M_POLL_START,
 } from "matrix-js-sdk/src/matrix";
-import {
-    CheckIcon,
-    ChevronUpIcon,
-    EditIcon,
-    ErrorSolidIcon,
-    InlineCodeIcon,
-    LinkIcon,
-    PinIcon,
-    QuoteIcon,
-    ReactionAddIcon,
-    ReplyIcon,
-    RestartIcon,
-    ThreadsIcon,
-    UnpinIcon,
-    DeleteIcon,
-    ForwardIcon,
-    PopOutIcon,
-    VisibilityOnIcon,
-    ShareIcon,
-    CopyIcon,
-    TreeIcon,
-} from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { MatrixClientPeg } from "../../../MatrixClientPeg";
 import dis from "../../../dispatcher/dispatcher";
@@ -76,6 +54,28 @@ import { CardContext } from "../right_panel/context";
 import PinningUtils from "../../../utils/PinningUtils";
 import PosthogTrackers from "../../../PosthogTrackers.ts";
 
+import {
+    Check as CheckIcon,
+    ChevronUp as ChevronUpIcon,
+    Pencil as EditIcon,
+    AlertCircle as ErrorSolidIcon,
+    Code as InlineCodeIcon,
+    Link as LinkIcon,
+    Pin as PinIcon,
+    Quote as QuoteIcon,
+    SmilePlus as ReactionAddIcon,
+    Reply as ReplyIcon,
+    RotateCw as RestartIcon,
+    MessagesSquare as ThreadsIcon,
+    PinOff as UnpinIcon,
+    Trash2 as DeleteIcon,
+    Forward as ForwardIcon,
+    ExternalLink as PopOutIcon,
+    Eye as VisibilityOnIcon,
+    Share2 as ShareIcon,
+    Copy as CopyIcon,
+    ListTree as TreeIcon,
+} from "lucide-react";
 interface IReplyInThreadButton {
     mxEvent: MatrixEvent;
     closeMenu: () => void;

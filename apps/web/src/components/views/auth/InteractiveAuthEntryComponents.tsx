@@ -12,8 +12,6 @@ import { AuthType, type AuthDict, type IInputs, type IStageStatus } from "matrix
 import { logger } from "matrix-js-sdk/src/logger";
 import React, { type JSX, type ChangeEvent, createRef, type FormEvent, Fragment } from "react";
 import { Button } from "@vector-im/compound-web";
-import PopOutIcon from "@vector-im/compound-design-tokens/assets/web/icons/pop-out";
-import UserProfileSolidIcon from "@vector-im/compound-design-tokens/assets/web/icons/user-profile-solid";
 
 import EmailPromptIcon from "../../../../res/img/element-icons/email-prompt.svg";
 import { _t } from "../../../languageHandler";
@@ -26,6 +24,7 @@ import { pickBestPolicyLanguage } from "../../../Terms.ts";
 import { EncryptionCardButtons } from "../settings/encryption/EncryptionCardButtons.tsx";
 import { EncryptionCard } from "../settings/encryption/EncryptionCard.tsx";
 
+import { ExternalLink as PopOutIcon, User as UserProfileSolidIcon } from "lucide-react";
 /* This file contains a collection of components which are used by the
  * InteractiveAuth to prompt the user to enter the information needed
  * for an auth stage. (The intention is that they could also be used for other

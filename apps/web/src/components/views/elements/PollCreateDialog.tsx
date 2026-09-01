@@ -18,7 +18,6 @@ import {
     type TimelineEvents,
 } from "matrix-js-sdk/src/matrix";
 import { PollStartEvent } from "matrix-js-sdk/src/extensible_events_v1/PollStartEvent";
-import { CloseIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import ScrollableBaseModal, { type IScrollableBaseState } from "../dialogs/ScrollableBaseModal";
 import QuestionDialog from "../dialogs/QuestionDialog";
@@ -30,6 +29,7 @@ import AccessibleButton from "./AccessibleButton";
 import Spinner from "./Spinner";
 import { doMaybeLocalRoomAction } from "../../../utils/local-room";
 
+import { X as CloseIcon } from "lucide-react";
 interface IProps {
     room: Room;
     threadId?: string;

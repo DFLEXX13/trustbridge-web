@@ -9,7 +9,6 @@ Please see LICENSE files in the repository root for full details.
 import React, { type JSX, type FC, useContext } from "react";
 import { type Room, JoinRule, type MatrixClient } from "matrix-js-sdk/src/matrix";
 import { KnownMembership } from "matrix-js-sdk/src/types";
-import { LockSolidIcon, VideoCallSolidIcon, PublicIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 import { RightPanelPhases } from "../../../stores/right-panel/RightPanelStorePhases";
@@ -20,6 +19,7 @@ import AccessibleButton from "../elements/AccessibleButton";
 import { isVideoRoom as calcIsVideoRoom } from "../../../utils/video-rooms";
 import { SDKContext } from "../../../contexts/SDKContext.ts";
 
+import { Lock as LockSolidIcon, Video as VideoCallSolidIcon, Globe as PublicIcon } from "lucide-react";
 interface IProps {
     room: Room;
 }

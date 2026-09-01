@@ -8,12 +8,13 @@ Please see LICENSE files in the repository root for full details.
 
 import React from "react";
 import { EventTimeline } from "matrix-js-sdk/src/matrix";
-import { VisibilityOffIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { EventTileBubble } from "@element-hq/web-shared-components";
 
 import { _t } from "../../../languageHandler";
 import { useScopedRoomContext } from "../../../contexts/ScopedRoomContext.tsx";
 
+import { EyeOff as VisibilityOffIcon } from "lucide-react";
 const HistoryTile: React.FC = () => {
     const { room } = useScopedRoomContext("room");
 

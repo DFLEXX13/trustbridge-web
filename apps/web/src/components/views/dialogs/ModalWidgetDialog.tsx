@@ -22,7 +22,6 @@ import {
     WidgetApiFromWidgetAction,
     WidgetKind,
 } from "matrix-widget-api";
-import { ErrorIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import BaseDialog from "./BaseDialog";
 import { _t } from "../../../languageHandler";
@@ -36,6 +35,7 @@ import { ElementWidget } from "../../../stores/widgets/WidgetMessaging";
 import { ELEMENT_CLIENT_ID } from "../../../identifiers";
 import ThemeWatcher, { ThemeWatcherEvent } from "../../../settings/watchers/ThemeWatcher";
 
+import { AlertCircle as ErrorIcon } from "lucide-react";
 interface IProps {
     widgetDefinition: IModalWidgetOpenRequestData;
     widgetRoomId?: string;

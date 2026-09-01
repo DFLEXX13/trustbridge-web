@@ -13,7 +13,7 @@ import {
     useCreateAutoDisposedViewModel,
 } from "@element-hq/web-shared-components";
 import { logger as rootLogger } from "matrix-js-sdk/src/logger";
-import { AttachmentIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import React, {
     type ChangeEventHandler,
     createContext,
@@ -46,6 +46,7 @@ import type { ComposerInsertFilesPayload } from "../../dispatcher/payloads/Compo
 import { useDispatcher } from "../../hooks/useDispatcher";
 import type { ActionPayload } from "../../dispatcher/payloads";
 
+import { Paperclip as AttachmentIcon } from "lucide-react";
 const logger = rootLogger.getChild("RoomUploadViewModel");
 
 interface RoomUploadViewSnapshot extends UploadButtonViewSnapshot {

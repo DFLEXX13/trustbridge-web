@@ -7,7 +7,7 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React, { type ReactNode, useRef } from "react";
-import { EmailSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { Button } from "@vector-im/compound-web";
 
 import { _t, _td } from "../../../../languageHandler";
@@ -17,6 +17,7 @@ import Spinner from "../../../views/elements/Spinner";
 import type Field from "../../../views/elements/Field";
 import AccessibleButton, { type ButtonEvent } from "../../../views/elements/AccessibleButton";
 
+import { Mail as EmailSolidIcon } from "lucide-react";
 interface EnterEmailProps {
     email: string;
     errorText: string | ReactNode | null;

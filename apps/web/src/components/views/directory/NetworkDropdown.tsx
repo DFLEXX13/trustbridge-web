@@ -9,7 +9,6 @@ Please see LICENSE files in the repository root for full details.
 import { without } from "lodash";
 import React, { useCallback, useEffect, useState } from "react";
 import { MatrixError } from "matrix-js-sdk/src/matrix";
-import { CloseIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 import { MatrixClientPeg } from "../../../MatrixClientPeg";
@@ -29,6 +28,7 @@ import AccessibleButton from "../elements/AccessibleButton";
 import withValidation from "../elements/Validation";
 import { type SettingKey, type Settings } from "../../../settings/Settings.tsx";
 
+import { X as CloseIcon } from "lucide-react";
 const SETTING_NAME = "room_directory_servers";
 
 export interface IPublicRoomDirectoryConfig {

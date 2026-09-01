@@ -7,9 +7,7 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React, { type JSX, type ReactNode, createRef, useCallback, useEffect, useState } from "react";
-import EditIcon from "@vector-im/compound-design-tokens/assets/web/icons/edit";
-import UploadIcon from "@vector-im/compound-design-tokens/assets/web/icons/share";
-import DeleteIcon from "@vector-im/compound-design-tokens/assets/web/icons/delete";
+
 import { Menu, MenuItem } from "@vector-im/compound-web";
 import classNames from "classnames";
 
@@ -22,6 +20,7 @@ import Modal from "../../../Modal.tsx";
 import ErrorDialog from "../dialogs/ErrorDialog.tsx";
 import CropAvatarDialog from "../dialogs/CropAvatarDialog.tsx";
 
+import { Pencil as EditIcon, Share2 as UploadIcon, Trash2 as DeleteIcon } from "lucide-react";
 interface MenuProps {
     trigger: ReactNode;
     onUploadSelect: () => void;

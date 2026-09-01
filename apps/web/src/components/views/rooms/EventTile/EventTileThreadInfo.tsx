@@ -7,7 +7,6 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { type JSX, type ReactNode } from "react";
 import { type MatrixEvent } from "matrix-js-sdk/src/matrix";
-import { ThreadsIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../../languageHandler";
 import { type EventTileViewModel } from "../../../../viewmodels/room/timeline/event-tile/EventTileViewModel";
@@ -15,6 +14,7 @@ import { type EventTileThreadState } from "../../../../viewmodels/room/timeline/
 import { ThreadMessagePreviewAdapter } from "./ThreadMessagePreviewAdapter";
 import { ThreadSummaryAdapter } from "./ThreadSummaryAdapter";
 
+import { MessagesSquare as ThreadsIcon } from "lucide-react";
 interface EventTileThreadInfoProps {
     eventTileViewModel: EventTileViewModel;
     mxEvent: MatrixEvent;

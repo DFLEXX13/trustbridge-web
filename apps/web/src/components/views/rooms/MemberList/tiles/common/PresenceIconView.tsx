@@ -7,14 +7,13 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { type JSX } from "react";
 import classNames from "classnames";
-import OnlineOrUnavailableIcon from "@vector-im/compound-design-tokens/assets/web/icons/presence-solid-8x8";
-import OfflineIcon from "@vector-im/compound-design-tokens/assets/web/icons/presence-outline-8x8";
-import DNDIcon from "@vector-im/compound-design-tokens/assets/web/icons/presence-strikethrough-8x8";
+
 import { Tooltip } from "@vector-im/compound-web";
 import { UnstableValue } from "matrix-js-sdk/src/NamespacedValue";
 
 import { _t } from "../../../../../../languageHandler";
 
+import { Circle as OnlineOrUnavailableIcon, Circle as OfflineIcon, CircleSlash as DNDIcon } from "lucide-react";
 interface Props {
     className?: string;
     presenceState: string;

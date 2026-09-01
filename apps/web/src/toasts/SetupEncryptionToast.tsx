@@ -8,7 +8,7 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React from "react";
-import { KeyIcon, ErrorSolidIcon, SettingsSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { type ComponentType } from "react";
 import { type Interaction as InteractionEvent } from "@matrix-org/analytics-events/types/typescript/Interaction";
 import { logger } from "matrix-js-sdk/src/logger";
@@ -33,6 +33,7 @@ import { MatrixClientPeg } from "../MatrixClientPeg";
 import { resetKeyBackupAndWait } from "../utils/crypto/resetKeyBackup";
 import { PosthogAnalytics } from "../PosthogAnalytics";
 
+import { Key as KeyIcon, AlertCircle as ErrorSolidIcon, Settings as SettingsSolidIcon } from "lucide-react";
 const TOAST_KEY = "setupencryption";
 
 /**

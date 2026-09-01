@@ -13,7 +13,6 @@ import { type MatrixCall } from "matrix-js-sdk/src/webrtc/call";
 import { logger } from "matrix-js-sdk/src/logger";
 import { debounce, uniqBy } from "lodash";
 import { Pill, PillInput, RichList } from "@element-hq/web-shared-components";
-import { DialPadIcon, UserProfileSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t, _td } from "../../../languageHandler";
 import { MatrixClientPeg } from "../../../MatrixClientPeg";
@@ -63,6 +62,7 @@ import { logErrorAndShowErrorDialog } from "../../../utils/ErrorUtils.tsx";
 import UnknownIdentityUsersWarningDialog from "./invite/UnknownIdentityUsersWarningDialog.tsx";
 import { AddressType, getAddressType } from "../../../UserAddress.ts";
 
+import { Grid3x3 as DialPadIcon, User as UserProfileSolidIcon } from "lucide-react";
 interface Result {
     userId: string;
     user: Member;

@@ -8,7 +8,6 @@ Please see LICENSE files in the repository root for full details.
 import React, { type JSX } from "react";
 import { type EventStatus, type RoomMember } from "matrix-js-sdk/src/matrix";
 import { Tooltip } from "@vector-im/compound-web";
-import { CheckCircleIcon, CircleIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../../languageHandler";
 import { StaticNotificationState } from "../../../../stores/notifications/StaticNotificationState";
@@ -17,6 +16,7 @@ import { ReadReceiptGroup } from "../ReadReceiptGroup";
 import { type IReadReceiptPosition } from "../ReadReceiptMarker";
 import { type EventTileReceiptState } from "../../../../viewmodels/room/timeline/event-tile/EventTileReceiptState";
 
+import { CheckCircle2 as CheckCircleIcon, Circle as CircleIcon } from "lucide-react";
 /**
  * A single read receipt entry displayed in the event tile receipt row.
  */

@@ -8,7 +8,6 @@ Please see LICENSE files in the repository root for full details.
 
 import React from "react";
 import { Glass } from "@vector-im/compound-web";
-import { CloseIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 import { Phase, SetupEncryptionStore } from "../../../stores/SetupEncryptionStore";
@@ -20,6 +19,7 @@ import SdkConfig from "../../../SdkConfig";
 import E2EIcon from "../../views/rooms/E2EIcon.tsx";
 import { E2EStatus } from "../../../utils/ShieldUtils.ts";
 
+import { X as CloseIcon } from "lucide-react";
 interface IProps {
     onFinished: () => void;
 }

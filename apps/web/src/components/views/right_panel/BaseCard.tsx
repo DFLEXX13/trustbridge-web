@@ -9,8 +9,7 @@ Please see LICENSE files in the repository root for full details.
 import React, { type ReactNode, type KeyboardEvent, type Ref, type MouseEvent, useMemo, useContext } from "react";
 import classNames from "classnames";
 import { IconButton, Text } from "@vector-im/compound-web";
-import CloseIcon from "@vector-im/compound-design-tokens/assets/web/icons/close";
-import ChevronLeftIcon from "@vector-im/compound-design-tokens/assets/web/icons/chevron-left";
+
 import { AutoHideScrollbar } from "@element-hq/web-shared-components";
 
 import { _t } from "../../../languageHandler";
@@ -18,6 +17,7 @@ import { backLabelForPhase } from "../../../stores/right-panel/RightPanelStorePh
 import { CardContext } from "./context";
 import { SDKContext } from "../../../contexts/SDKContext.ts";
 
+import { X as CloseIcon, ChevronLeft as ChevronLeftIcon } from "lucide-react";
 interface IProps {
     header?: ReactNode | null;
     hideHeaderButtons?: boolean;

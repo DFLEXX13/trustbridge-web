@@ -7,10 +7,10 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React, { type JSX, type DetailedHTMLProps, type HTMLAttributes } from "react";
-import CloseIcon from "@vector-im/compound-design-tokens/assets/web/icons/close";
 
 import AccessibleButton from "./AccessibleButton";
 
+import { X as CloseIcon } from "lucide-react";
 interface IProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
     icon?: () => JSX.Element;
     label: string;

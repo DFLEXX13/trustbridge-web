@@ -10,12 +10,7 @@ Please see LICENSE files in the repository root for full details.
 import React, { type JSX, useCallback, useId, useState } from "react";
 import { EventTimeline, EventType, type MatrixEvent, type Room } from "matrix-js-sdk/src/matrix";
 import { IconButton, Menu, MenuItem, Separator, Tooltip } from "@vector-im/compound-web";
-import ViewIcon from "@vector-im/compound-design-tokens/assets/web/icons/visibility-on";
-import UnpinIcon from "@vector-im/compound-design-tokens/assets/web/icons/unpin";
-import ForwardIcon from "@vector-im/compound-design-tokens/assets/web/icons/forward";
-import TriggerIcon from "@vector-im/compound-design-tokens/assets/web/icons/overflow-horizontal";
-import DeleteIcon from "@vector-im/compound-design-tokens/assets/web/icons/delete";
-import ThreadIcon from "@vector-im/compound-design-tokens/assets/web/icons/threads";
+
 import classNames from "classnames";
 
 import dis from "../../../dispatcher/dispatcher";
@@ -36,6 +31,14 @@ import { type ShowThreadPayload } from "../../../dispatcher/payloads/ShowThreadP
 import PinningUtils from "../../../utils/PinningUtils.ts";
 import PosthogTrackers from "../../../PosthogTrackers.ts";
 
+import {
+    Eye as ViewIcon,
+    PinOff as UnpinIcon,
+    Forward as ForwardIcon,
+    MoreHorizontal as TriggerIcon,
+    Trash2 as DeleteIcon,
+    MessagesSquare as ThreadIcon,
+} from "lucide-react";
 const AVATAR_SIZE = "32px";
 
 /**

@@ -8,8 +8,6 @@ Please see LICENSE files in the repository root for full details.
 import { type RoomMember, type User, type Room } from "matrix-js-sdk/src/matrix";
 import React, { type JSX, type ReactNode, useState } from "react";
 import { MenuItem } from "@vector-im/compound-web";
-import { ChatIcon, CheckIcon, MentionIcon, ShareIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
-import InviteIcon from "@vector-im/compound-design-tokens/assets/web/icons/user-add";
 
 import { _t } from "../../../../languageHandler";
 import { useUserInfoBasicOptionsViewModel } from "../../../viewmodels/right_panel/user_info/UserInfoBasicOptionsViewModel";
@@ -17,6 +15,13 @@ import { Container, type Member } from "../UserInfo";
 import { shouldShowComponent } from "../../../../customisations/helpers/UIComponents";
 import { UIComponent } from "../../../../settings/UIFeature";
 
+import {
+    UserPlus as InviteIcon,
+    MessageCircle as ChatIcon,
+    Check as CheckIcon,
+    AtSign as MentionIcon,
+    Share2 as ShareIcon,
+} from "lucide-react";
 const MessageButton = ({
     member,
     openDMForUser,

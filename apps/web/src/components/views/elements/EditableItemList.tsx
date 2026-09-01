@@ -7,12 +7,12 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React, { type JSX, type ChangeEvent } from "react";
-import { CloseIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 import Field from "./Field";
 import AccessibleButton, { type ButtonEvent } from "./AccessibleButton";
 
+import { X as CloseIcon } from "lucide-react";
 interface IItemProps {
     index: number;
     value?: string;

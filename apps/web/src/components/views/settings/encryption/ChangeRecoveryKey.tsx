@@ -18,8 +18,7 @@ import {
     Root,
     Text,
 } from "@vector-im/compound-web";
-import CopyIcon from "@vector-im/compound-design-tokens/assets/web/icons/copy";
-import KeyIcon from "@vector-im/compound-design-tokens/assets/web/icons/key-solid";
+
 import { logger } from "matrix-js-sdk/src/logger";
 
 import { _t } from "../../../../languageHandler";
@@ -34,6 +33,7 @@ import { logErrorAndShowErrorDialog } from "../../../../utils/ErrorUtils.tsx";
 import { DeviceListener, RECOVERY_ACCOUNT_DATA_KEY } from "../../../../device-listener";
 import { resetKeyBackupAndWait } from "../../../../utils/crypto/resetKeyBackup";
 
+import { Copy as CopyIcon, KeyRound as KeyIcon } from "lucide-react";
 /**
  * The possible states of the component.
  * - `inform_user`: The user is informed about the recovery key.

@@ -7,8 +7,8 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React, { type ReactNode } from "react";
-import { ErrorSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
+import { AlertCircle as ErrorSolidIcon } from "lucide-react";
 interface ErrorMessageProps {
     message: string | ReactNode | null;
 }

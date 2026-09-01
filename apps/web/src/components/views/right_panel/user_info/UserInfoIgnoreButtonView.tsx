@@ -8,11 +8,11 @@ Please see LICENSE files in the repository root for full details.
 import { type RoomMember, type User } from "matrix-js-sdk/src/matrix";
 import React from "react";
 import { MenuItem } from "@vector-im/compound-web";
-import { BlockIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../../languageHandler";
 import { useUserInfoIgnoreButtonViewModel } from "../../../viewmodels/right_panel/user_info/UserInfoIgnoreButtonViewModel";
 
+import { Ban as BlockIcon } from "lucide-react";
 export const IgnoreToggleButton: React.FC<{
     member: User | RoomMember;
 }> = ({ member }) => {

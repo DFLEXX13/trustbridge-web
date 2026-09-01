@@ -7,7 +7,6 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React from "react";
-import { InfoIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import AccessibleButton from "./AccessibleButton";
 import { type ValidatedServerConfig } from "../../../utils/ValidatedServerConfig";
@@ -18,6 +17,7 @@ import Modal from "../../../Modal";
 import ServerPickerDialog from "../dialogs/ServerPickerDialog";
 import InfoDialog from "../dialogs/InfoDialog";
 
+import { Info as InfoIcon } from "lucide-react";
 interface IProps {
     title?: string;
     dialogTitle?: string;

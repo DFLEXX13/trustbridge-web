@@ -10,15 +10,6 @@ import { EventType, RoomType, JoinRule, Preset, type Room, RoomEvent } from "mat
 import { KnownMembership } from "matrix-js-sdk/src/types";
 import { logger } from "matrix-js-sdk/src/logger";
 import React, { type JSX, useCallback, useContext, useRef, useState } from "react";
-import {
-    GroupIcon,
-    PlusIcon,
-    RoomIcon,
-    SettingsSolidIcon,
-    UserAddIcon,
-    UserProfileSolidIcon,
-    VideoCallSolidIcon,
-} from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import createRoom, { type IOpts } from "../../createRoom";
 import { shouldShowComponent } from "../../customisations/helpers/UIComponents";
@@ -77,6 +68,15 @@ import { useRoomName } from "../../hooks/useRoomName.ts";
 import MultiInviter from "../../utils/MultiInviter.ts";
 import { SDKContext } from "../../contexts/SDKContext.ts";
 
+import {
+    Users as GroupIcon,
+    Plus as PlusIcon,
+    MessageSquare as RoomIcon,
+    Settings as SettingsSolidIcon,
+    UserPlus as UserAddIcon,
+    User as UserProfileSolidIcon,
+    Video as VideoCallSolidIcon,
+} from "lucide-react";
 interface IProps {
     space: Room;
     justCreatedOpts?: IOpts;

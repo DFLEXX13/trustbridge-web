@@ -11,15 +11,7 @@ Please see LICENSE files in the repository root for full details.
 import React, { type JSX, createRef, type CSSProperties, useEffect } from "react";
 import FocusLock from "react-focus-lock";
 import { type MatrixEvent } from "matrix-js-sdk/src/matrix";
-import {
-    CloseIcon,
-    DownloadIcon,
-    OverflowHorizontalIcon,
-    RotateLeftIcon,
-    RotateRightIcon,
-    ZoomInIcon,
-    ZoomOutIcon,
-} from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { useCreateAutoDisposedViewModel, MessageTimestampView } from "@element-hq/web-shared-components";
 
 import { _t } from "../../../languageHandler";
@@ -39,6 +31,15 @@ import { getKeyBindingsManager } from "../../../KeyBindingsManager";
 import { presentableTextForFile } from "../../../utils/FileUtils";
 import AccessibleButton from "./AccessibleButton";
 import { useDownloadMedia } from "../../../hooks/useDownloadMedia.ts";
+import {
+    X as CloseIcon,
+    Download as DownloadIcon,
+    MoreHorizontal as OverflowHorizontalIcon,
+    RotateCcw as RotateLeftIcon,
+    RotateCw as RotateRightIcon,
+    ZoomIn as ZoomInIcon,
+    ZoomOut as ZoomOutIcon,
+} from "lucide-react";
 import {
     MessageTimestampViewModel,
     type MessageTimestampViewModelProps,

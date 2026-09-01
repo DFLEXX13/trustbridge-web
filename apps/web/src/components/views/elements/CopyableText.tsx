@@ -9,12 +9,13 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { useState } from "react";
 import classNames from "classnames";
-import { CopyIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { IconButton } from "@vector-im/compound-web";
 
 import { _t } from "../../../languageHandler";
 import { copyPlaintext } from "../../../utils/strings";
 
+import { Copy as CopyIcon } from "lucide-react";
 interface IProps extends React.HTMLAttributes<HTMLDivElement> {
     children?: React.ReactNode;
     getTextToCopy: () => string | null;

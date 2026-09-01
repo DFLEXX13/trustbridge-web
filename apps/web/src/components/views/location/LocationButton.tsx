@@ -9,13 +9,13 @@ Please see LICENSE files in the repository root for full details.
 import React, { type ReactNode, type SyntheticEvent, useContext } from "react";
 import classNames from "classnames";
 import { type RoomMember, type IEventRelation } from "matrix-js-sdk/src/matrix";
-import { LocationPinIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 import { CollapsibleButton, OverflowMenuContext } from "../rooms/CollapsibleButton";
 import { aboveLeftOf, useContextMenu, type MenuProps } from "../../structures/ContextMenu";
 import LocationShareMenu from "./LocationShareMenu";
 
+import { MapPin as LocationPinIcon } from "lucide-react";
 export interface IProps {
     roomId: string;
     sender: RoomMember;

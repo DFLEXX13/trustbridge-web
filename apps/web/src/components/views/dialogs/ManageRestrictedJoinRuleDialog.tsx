@@ -9,7 +9,7 @@ Please see LICENSE files in the repository root for full details.
 import React, { useMemo, useState } from "react";
 import { Room } from "matrix-js-sdk/src/matrix";
 import { KnownMembership } from "matrix-js-sdk/src/types";
-import { InfoSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { AutoHideScrollbar } from "@element-hq/web-shared-components";
 
 import { _t } from "../../../languageHandler";
@@ -22,6 +22,7 @@ import MatrixClientContext from "../../../contexts/MatrixClientContext";
 import { filterBoolean } from "../../../utils/arrays";
 import { SDKContextClass } from "../../../contexts/SDKContextClass.ts";
 
+import { Info as InfoSolidIcon } from "lucide-react";
 interface IProps {
     room: Room;
     selected?: string[];

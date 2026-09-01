@@ -7,12 +7,7 @@
 
 import React, { memo, type JSX } from "react";
 import { type Room } from "matrix-js-sdk/src/matrix";
-import PublicIcon from "@vector-im/compound-design-tokens/assets/web/icons/public";
-import VideoIcon from "@vector-im/compound-design-tokens/assets/web/icons/video-call-solid";
-import ArrowDownIcon from "@vector-im/compound-design-tokens/assets/web/icons/arrow-down";
-import OnlineOrUnavailableIcon from "@vector-im/compound-design-tokens/assets/web/icons/presence-solid-8x8";
-import OfflineIcon from "@vector-im/compound-design-tokens/assets/web/icons/presence-outline-8x8";
-import BusyIcon from "@vector-im/compound-design-tokens/assets/web/icons/presence-strikethrough-8x8";
+
 import classNames from "classnames";
 import { Tooltip } from "@vector-im/compound-web";
 import { Flex } from "@element-hq/web-shared-components";
@@ -22,6 +17,14 @@ import { AvatarBadgeDecoration, useRoomAvatarViewModel } from "../../viewmodels/
 import { _t } from "../../../languageHandler";
 import { Presence } from "./WithPresenceIndicator";
 
+import {
+    Globe as PublicIcon,
+    Video as VideoIcon,
+    ArrowDown as ArrowDownIcon,
+    Circle as OnlineOrUnavailableIcon,
+    Circle as OfflineIcon,
+    CircleSlash as BusyIcon,
+} from "lucide-react";
 interface DecoratedRoomAvatarViewProps {
     /**
      * The room to display the avatar for.

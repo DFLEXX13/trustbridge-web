@@ -10,8 +10,6 @@ Please see LICENSE files in the repository root for full details.
 import React, { type JSX, useMemo, useRef, useState } from "react";
 import { Room, RoomMember, MatrixEvent, User } from "matrix-js-sdk/src/matrix";
 import { Checkbox, Button } from "@vector-im/compound-web";
-import LinkIcon from "@vector-im/compound-design-tokens/assets/web/icons/link";
-import CheckIcon from "@vector-im/compound-design-tokens/assets/web/icons/check";
 
 import { _t } from "../../../languageHandler";
 import QRCode from "../elements/QRCode";
@@ -27,6 +25,7 @@ import LinkedInIcon from "../../../../res/img/social/linkedin.png";
 import RedditIcon from "../../../../res/img/social/reddit.png";
 import EmailIcon from "../../../../res/img/social/email-1.png";
 
+import { Link as LinkIcon, Check as CheckIcon } from "lucide-react";
 const SOCIALS = [
     {
         name: "Facebook",

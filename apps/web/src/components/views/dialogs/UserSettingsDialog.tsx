@@ -10,19 +10,7 @@ Please see LICENSE files in the repository root for full details.
 import { ClientEvent, type MatrixEvent } from "matrix-js-sdk/src/matrix";
 import { Toast } from "@vector-im/compound-web";
 import React, { type JSX, useState } from "react";
-import UserProfileIcon from "@vector-im/compound-design-tokens/assets/web/icons/user-profile";
-import DevicesIcon from "@vector-im/compound-design-tokens/assets/web/icons/devices";
-import VisibilityOnIcon from "@vector-im/compound-design-tokens/assets/web/icons/visibility-on";
-import NotificationsIcon from "@vector-im/compound-design-tokens/assets/web/icons/notifications";
-import PreferencesIcon from "@vector-im/compound-design-tokens/assets/web/icons/preferences";
-import KeyboardIcon from "@vector-im/compound-design-tokens/assets/web/icons/keyboard";
-import KeyIcon from "@vector-im/compound-design-tokens/assets/web/icons/key";
-import SidebarIcon from "@vector-im/compound-design-tokens/assets/web/icons/sidebar";
-import MicOnIcon from "@vector-im/compound-design-tokens/assets/web/icons/mic-on";
-import LockIcon from "@vector-im/compound-design-tokens/assets/web/icons/lock";
-import LabsIcon from "@vector-im/compound-design-tokens/assets/web/icons/labs";
-import BlockIcon from "@vector-im/compound-design-tokens/assets/web/icons/block";
-import HelpIcon from "@vector-im/compound-design-tokens/assets/web/icons/help";
+
 import { ToastContext, useActiveToast } from "@element-hq/web-shared-components";
 
 import TabbedView, { Tab, useActiveTabWithDefault } from "../../structures/TabbedView";
@@ -50,6 +38,21 @@ import { useSettingValue } from "../../../hooks/useSettings";
 import { NoChange, useEventEmitterAsyncState, type AsyncStateCallbackResult } from "../../../hooks/useEventEmitter";
 import { EncryptionUserSettingsTab, type State } from "../settings/tabs/user/EncryptionUserSettingsTab";
 
+import {
+    User as UserProfileIcon,
+    Smartphone as DevicesIcon,
+    Eye as VisibilityOnIcon,
+    Bell as NotificationsIcon,
+    Settings2 as PreferencesIcon,
+    Keyboard as KeyboardIcon,
+    Key as KeyIcon,
+    PanelLeft as SidebarIcon,
+    Mic as MicOnIcon,
+    Lock as LockIcon,
+    FlaskConical as LabsIcon,
+    Ban as BlockIcon,
+    HelpCircle as HelpIcon,
+} from "lucide-react";
 interface IProps {
     initialTabId?: UserTab;
     showMsc4108QrCode?: boolean;

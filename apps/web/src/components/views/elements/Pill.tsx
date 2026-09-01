@@ -10,7 +10,6 @@ import React, { type ReactElement, useContext } from "react";
 import classNames from "classnames";
 import { type Room, type RoomMember } from "matrix-js-sdk/src/matrix";
 import { Tooltip } from "@vector-im/compound-web";
-import { LinkIcon, UserSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import MatrixClientContext from "../../../contexts/MatrixClientContext";
 import { usePermalink } from "../../../hooks/usePermalink";
@@ -20,6 +19,7 @@ import MemberAvatar from "../avatars/MemberAvatar";
 import { _t } from "../../../languageHandler";
 import { PillType } from "./PillType";
 
+import { Link as LinkIcon, User as UserSolidIcon } from "lucide-react";
 const linkIcon = <LinkIcon className="mx_Pill_LinkIcon mx_BaseAvatar" />;
 
 const PillRoomAvatar: React.FC<{

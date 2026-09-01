@@ -10,12 +10,6 @@ import React, { type JSX, useContext, useEffect, useMemo, useState } from "react
 import { type Room } from "matrix-js-sdk/src/matrix";
 import classNames from "classnames";
 import { Button, Link, Separator, Text } from "@vector-im/compound-web";
-import {
-    PlusIcon,
-    ExtensionsIcon,
-    OverflowHorizontalIcon,
-    PinSolidIcon,
-} from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import BaseCard from "./BaseCard";
 import WidgetUtils, { useWidgets } from "../../../utils/WidgetUtils";
@@ -33,6 +27,12 @@ import { UIComponent } from "../../../settings/UIFeature.ts";
 import { WidgetContextMenu } from "../../../viewmodels/room/right-panel/WidgetContextMenuViewModel.tsx";
 import { SDKContext } from "../../../contexts/SDKContext.ts";
 
+import {
+    Plus as PlusIcon,
+    Puzzle as ExtensionsIcon,
+    MoreHorizontal as OverflowHorizontalIcon,
+    Pin as PinSolidIcon,
+} from "lucide-react";
 interface Props {
     room: Room;
     onClose(this: void): void;

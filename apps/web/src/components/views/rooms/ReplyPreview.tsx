@@ -8,7 +8,6 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { type JSX } from "react";
 import { type MatrixEvent } from "matrix-js-sdk/src/matrix";
-import { CloseIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import dis from "../../../dispatcher/dispatcher";
 import { _t } from "../../../languageHandler";
@@ -17,6 +16,7 @@ import ReplyTile from "./ReplyTile";
 import RoomContext, { type TimelineRenderingType } from "../../../contexts/RoomContext";
 import AccessibleButton from "../elements/AccessibleButton";
 
+import { X as CloseIcon } from "lucide-react";
 function cancelQuoting(context: TimelineRenderingType): void {
     dis.dispatch({
         action: "reply_to_event",

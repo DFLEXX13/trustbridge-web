@@ -8,7 +8,6 @@ Please see LICENSE files in the repository root for full details.
 import React, { type JSX } from "react";
 import { Button, Heading, Text } from "@vector-im/compound-web";
 import { createClient } from "matrix-js-sdk/src/matrix";
-import { QrCodeIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 import SdkConfig from "../../../SdkConfig.ts";
@@ -19,6 +18,7 @@ import { type ValidatedServerConfig } from "../../../utils/ValidatedServerConfig
 import { useAsyncMemo } from "../../../hooks/useAsyncMemo.ts";
 import Spinner from "../elements/Spinner.tsx";
 
+import { QrCode as QrCodeIcon } from "lucide-react";
 interface Props {
     /**
      * The server config to use for QR code login

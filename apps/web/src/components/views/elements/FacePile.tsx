@@ -10,13 +10,13 @@ import React, { type FC, type HTMLAttributes, type ReactNode } from "react";
 import { type RoomMember } from "matrix-js-sdk/src/matrix";
 import { AvatarStack, Tooltip } from "@vector-im/compound-web";
 import classNames from "classnames";
-import { OverflowHorizontalIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import MemberAvatar from "../avatars/MemberAvatar";
 import AccessibleButton, { type ButtonEvent } from "./AccessibleButton";
 import { useToggled } from "../rooms/RoomHeader/toggle/useToggled";
 import { RightPanelPhases } from "../../../stores/right-panel/RightPanelStorePhases";
 
+import { MoreHorizontal as OverflowHorizontalIcon } from "lucide-react";
 interface IProps extends Omit<HTMLAttributes<HTMLDivElement>, "onChange"> {
     members: RoomMember[];
     size: string;

@@ -9,7 +9,6 @@ Please see LICENSE files in the repository root for full details.
 import classNames from "classnames";
 import { EventType } from "matrix-js-sdk/src/matrix";
 import React, { useContext, useRef, useState, type MouseEvent, type ReactNode } from "react";
-import { TakePhotoSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import MatrixClientContext from "../../../contexts/MatrixClientContext";
 import { chromeFileInputFix } from "../../../utils/BrowserWorkarounds";
@@ -18,6 +17,7 @@ import Spinner from "./Spinner";
 import { cropAvatarFile, getFileChanged } from "../settings/AvatarSetting.tsx";
 import { useScopedRoomContext } from "../../../contexts/ScopedRoomContext.tsx";
 
+import { Camera as TakePhotoSolidIcon } from "lucide-react";
 export const AVATAR_SIZE = "52px";
 
 interface IProps {

@@ -18,7 +18,6 @@ import {
 } from "matrix-js-sdk/src/matrix";
 import { logger } from "matrix-js-sdk/src/logger";
 import { Form, InlineSpinner, SettingsToggleInput } from "@vector-im/compound-web";
-import { WarningIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../../../languageHandler";
 import Modal from "../../../../../Modal";
@@ -44,6 +43,7 @@ import { shouldForceDisableEncryption } from "../../../../../utils/crypto/should
 import { Caption } from "../../../typography/Caption";
 import { MEGOLM_ENCRYPTION_ALGORITHM } from "../../../../../utils/crypto";
 
+import { AlertTriangle as WarningIcon } from "lucide-react";
 interface IProps {
     room: Room;
     closeSettingsFn: () => void;

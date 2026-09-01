@@ -20,24 +20,7 @@ import {
     Search,
     Form,
 } from "@vector-im/compound-web";
-import FavouriteIcon from "@vector-im/compound-design-tokens/assets/web/icons/favourite";
-import UserAddIcon from "@vector-im/compound-design-tokens/assets/web/icons/user-add";
-import LinkIcon from "@vector-im/compound-design-tokens/assets/web/icons/link";
-import SettingsIcon from "@vector-im/compound-design-tokens/assets/web/icons/settings";
-import ExportArchiveIcon from "@vector-im/compound-design-tokens/assets/web/icons/export-archive";
-import LeaveIcon from "@vector-im/compound-design-tokens/assets/web/icons/leave";
-import FilesIcon from "@vector-im/compound-design-tokens/assets/web/icons/files";
-import ExtensionsIcon from "@vector-im/compound-design-tokens/assets/web/icons/extensions";
-import UserProfileIcon from "@vector-im/compound-design-tokens/assets/web/icons/user-profile";
-import ThreadsIcon from "@vector-im/compound-design-tokens/assets/web/icons/threads";
-import PollsIcon from "@vector-im/compound-design-tokens/assets/web/icons/polls";
-import PinIcon from "@vector-im/compound-design-tokens/assets/web/icons/pin";
-import LockIcon from "@vector-im/compound-design-tokens/assets/web/icons/lock-solid";
-import LockOffIcon from "@vector-im/compound-design-tokens/assets/web/icons/lock-off";
-import PublicIcon from "@vector-im/compound-design-tokens/assets/web/icons/public";
-import ErrorIcon from "@vector-im/compound-design-tokens/assets/web/icons/error";
-import ErrorSolidIcon from "@vector-im/compound-design-tokens/assets/web/icons/error-solid";
-import ChevronDownIcon from "@vector-im/compound-design-tokens/assets/web/icons/chevron-down";
+
 import { JoinRule, type Room } from "matrix-js-sdk/src/matrix";
 import { Box, Flex, HistoryVisibilityBadge, LinkedText, StatusTextView } from "@element-hq/web-shared-components";
 
@@ -51,6 +34,26 @@ import { useRoomSummaryCardViewModel } from "../../viewmodels/right_panel/RoomSu
 import { useRoomTopicViewModel } from "../../viewmodels/right_panel/RoomSummaryCardTopicViewModel";
 import { useRoomName } from "../../../hooks/useRoomName.ts";
 
+import {
+    Star as FavouriteIcon,
+    UserPlus as UserAddIcon,
+    Link as LinkIcon,
+    Settings as SettingsIcon,
+    Archive as ExportArchiveIcon,
+    LogOut as LeaveIcon,
+    Files as FilesIcon,
+    Puzzle as ExtensionsIcon,
+    User as UserProfileIcon,
+    MessagesSquare as ThreadsIcon,
+    BarChart2 as PollsIcon,
+    Pin as PinIcon,
+    Lock as LockIcon,
+    LockOpen as LockOffIcon,
+    Globe as PublicIcon,
+    AlertCircle as ErrorIcon,
+    AlertCircle as ErrorSolidIcon,
+    ChevronDown as ChevronDownIcon,
+} from "lucide-react";
 interface IProps {
     room: Room;
     permalinkCreator: RoomPermalinkCreator;

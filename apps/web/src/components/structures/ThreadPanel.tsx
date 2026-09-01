@@ -10,7 +10,6 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import { type EventTimelineSet, type Room, Thread } from "matrix-js-sdk/src/matrix";
 import { IconButton, Tooltip } from "@vector-im/compound-web";
 import { logger } from "matrix-js-sdk/src/logger";
-import { ThreadsIcon, CheckIcon, ChevronDownIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import MarkAllThreadsReadIcon from "../../../res/img/element-icons/check-all.svg?react";
 import BaseCard from "../views/right_panel/BaseCard";
@@ -32,6 +31,7 @@ import EmptyState from "../views/right_panel/EmptyState";
 import { ScopedRoomContextProvider, useScopedRoomContext } from "../../contexts/ScopedRoomContext.tsx";
 import { EventPresentationContextProvider } from "../../utils/EventPresentationContextProvider";
 
+import { MessagesSquare as ThreadsIcon, Check as CheckIcon, ChevronDown as ChevronDownIcon } from "lucide-react";
 interface IProps {
     roomId: string;
     onClose: () => void;

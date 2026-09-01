@@ -23,13 +23,7 @@ import { type Room, RoomEvent } from "matrix-js-sdk/src/matrix";
 import { KnownMembership } from "matrix-js-sdk/src/types";
 import { logger } from "matrix-js-sdk/src/logger";
 import { type ApprovalOpts, WidgetLifecycle } from "@matrix-org/react-sdk-module-api/lib/lifecycles/WidgetLifecycle";
-import {
-    OverflowHorizontalIcon,
-    MinusIcon,
-    ExpandIcon,
-    CollapseIcon,
-    PopOutIcon,
-} from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { I18nContext } from "@element-hq/web-shared-components";
 
 import AccessibleButton from "./AccessibleButton";
@@ -61,6 +55,13 @@ import { RightPanelPhases } from "../../../stores/right-panel/RightPanelStorePha
 import { WidgetContextMenu } from "../../../viewmodels/room/right-panel/WidgetContextMenuViewModel.tsx";
 import { SDKContext } from "../../../contexts/SDKContext.ts";
 
+import {
+    MoreHorizontal as OverflowHorizontalIcon,
+    Minus as MinusIcon,
+    Maximize2 as ExpandIcon,
+    Minimize2 as CollapseIcon,
+    ExternalLink as PopOutIcon,
+} from "lucide-react";
 // Note that there is advice saying allow-scripts shouldn't be used with allow-same-origin
 // because that would allow the iframe to programmatically remove the sandbox attribute, but
 // this would only be for content hosted on the same origin as the element client: anything

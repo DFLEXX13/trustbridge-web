@@ -10,7 +10,6 @@ import React, { useCallback, useEffect, type JSX, useContext } from "react";
 import { type Room, type MatrixEvent } from "matrix-js-sdk/src/matrix";
 import { Button, Separator } from "@vector-im/compound-web";
 import classNames from "classnames";
-import PinIcon from "@vector-im/compound-design-tokens/assets/web/icons/pin";
 
 import { _t } from "../../../languageHandler";
 import BaseCard from "./BaseCard";
@@ -28,6 +27,7 @@ import { usePinnedEvents, useReadPinnedEvents, useSortedFetchedPinnedEvents } fr
 import PinningUtils from "../../../utils/PinningUtils.ts";
 import { ScopedRoomContextProvider } from "../../../contexts/ScopedRoomContext.tsx";
 
+import { Pin as PinIcon } from "lucide-react";
 /**
  * List the pinned messages in a room inside a Card.
  */

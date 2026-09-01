@@ -7,13 +7,13 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React from "react";
-import { OfflineIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 import AccessibleButton from "../elements/AccessibleButton";
 import Modal from "../../../Modal";
 import ServerOfflineDialog from "../dialogs/ServerOfflineDialog";
 
+import { WifiOff as OfflineIcon } from "lucide-react";
 export default class NonUrgentEchoFailureToast extends React.PureComponent {
     private openDialog = (): void => {
         Modal.createDialog(ServerOfflineDialog, {});

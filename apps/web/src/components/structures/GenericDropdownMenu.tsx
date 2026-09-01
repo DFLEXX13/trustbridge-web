@@ -8,12 +8,12 @@ Please see LICENSE files in the repository root for full details.
 
 import classNames from "classnames";
 import React, { type JSX, type FunctionComponent, type Key, type PropsWithChildren, type ReactNode } from "react";
-import { ChevronDownIcon, CheckIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { MenuItemRadio } from "../../accessibility/context_menu/MenuItemRadio";
 import { type ButtonEvent } from "../views/elements/AccessibleButton";
 import ContextMenu, { aboveLeftOf, ChevronFace, ContextMenuButton, useContextMenu } from "./ContextMenu";
 
+import { ChevronDown as ChevronDownIcon, Check as CheckIcon } from "lucide-react";
 export type GenericDropdownMenuOption<T> = {
     key: T;
     label: ReactNode;

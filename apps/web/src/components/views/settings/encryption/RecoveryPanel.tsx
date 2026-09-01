@@ -7,7 +7,6 @@
 
 import React, { type JSX } from "react";
 import { Button, InlineSpinner } from "@vector-im/compound-web";
-import KeyIcon from "@vector-im/compound-design-tokens/assets/web/icons/key";
 
 import { SettingsSection } from "../shared/SettingsSection";
 import { _t } from "../../../../languageHandler";
@@ -15,6 +14,7 @@ import { useMatrixClientContext } from "../../../../contexts/MatrixClientContext
 import { SettingsHeader } from "../SettingsHeader";
 import { useAsyncMemo } from "../../../../hooks/useAsyncMemo";
 
+import { Key as KeyIcon } from "lucide-react";
 /**
  * The possible states of the recovery panel.
  * - `loading`: We are checking the recovery key and the secrets.

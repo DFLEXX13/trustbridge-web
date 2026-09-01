@@ -7,7 +7,6 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React from "react";
-import { ErrorSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../languageHandler";
 import dis from "../dispatcher/dispatcher";
@@ -20,6 +19,7 @@ import { isDeviceVerified } from "../utils/device/isDeviceVerified";
 import { DeviceMetaData } from "../components/views/settings/devices/DeviceMetaData";
 import type { ExtendedDevice } from "../components/views/settings/devices/types.ts";
 
+import { AlertCircle as ErrorSolidIcon } from "lucide-react";
 function toastKey(deviceId: string): string {
     return "unverified_session_" + deviceId;
 }

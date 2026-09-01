@@ -7,8 +7,6 @@
 
 import React, { type JSX, lazy, type MouseEventHandler } from "react";
 import { Button, HelpMessage, InlineField, InlineSpinner, Label, Root, ToggleControl } from "@vector-im/compound-web";
-import DownloadIcon from "@vector-im/compound-design-tokens/assets/web/icons/download";
-import ShareIcon from "@vector-im/compound-design-tokens/assets/web/icons/share";
 
 import { _t } from "../../../../languageHandler";
 import { SettingsSection } from "../shared/SettingsSection";
@@ -19,6 +17,7 @@ import { SettingLevel } from "../../../../settings/SettingLevel";
 import { useSettingValueAt } from "../../../../hooks/useSettings";
 import SettingsStore from "../../../../settings/SettingsStore";
 
+import { Download as DownloadIcon, Share2 as ShareIcon } from "lucide-react";
 interface AdvancedPanelProps {
     /**
      * Callback for when the user clicks the button to reset their identity.

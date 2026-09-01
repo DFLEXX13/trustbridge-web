@@ -7,7 +7,7 @@
 
 import React, { type JSX } from "react";
 import { Button } from "@vector-im/compound-web";
-import KeyIcon from "@vector-im/compound-design-tokens/assets/web/icons/key";
+
 import { logger } from "matrix-js-sdk/src/logger";
 import { DecryptionKeyDoesNotMatchError } from "matrix-js-sdk/src/crypto-api";
 
@@ -19,6 +19,7 @@ import { DeviceListener } from "../../../../device-listener";
 import { useMatrixClientContext } from "../../../../contexts/MatrixClientContext";
 import { resetKeyBackupAndWait } from "../../../../utils/crypto/resetKeyBackup";
 
+import { Key as KeyIcon } from "lucide-react";
 interface RecoveryPanelOutOfSyncProps {
     /**
      * Callback for when the user has finished entering their recovery key.

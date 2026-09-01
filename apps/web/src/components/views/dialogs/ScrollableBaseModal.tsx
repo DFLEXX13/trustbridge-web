@@ -9,7 +9,6 @@ Please see LICENSE files in the repository root for full details.
 import React, { type FormEvent } from "react";
 import { type MatrixClient } from "matrix-js-sdk/src/matrix";
 import FocusLock from "react-focus-lock";
-import { CloseIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { MatrixClientPeg } from "../../../MatrixClientPeg";
 import MatrixClientContext from "../../../contexts/MatrixClientContext";
@@ -18,6 +17,7 @@ import AccessibleButton from "../elements/AccessibleButton";
 import { KeyBindingAction } from "../../../accessibility/KeyboardShortcuts";
 import { getKeyBindingsManager } from "../../../KeyBindingsManager";
 
+import { X as CloseIcon } from "lucide-react";
 export interface IScrollableBaseState {
     canSubmit: boolean;
     title: string;

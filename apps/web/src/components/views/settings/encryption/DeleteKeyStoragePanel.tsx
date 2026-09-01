@@ -6,8 +6,7 @@
  */
 
 import { Breadcrumb, Button, VisualList, VisualListItem } from "@vector-im/compound-web";
-import CrossIcon from "@vector-im/compound-design-tokens/assets/web/icons/close";
-import ErrorIcon from "@vector-im/compound-design-tokens/assets/web/icons/error-solid";
+
 import React, { type JSX, useCallback, useState } from "react";
 
 import { _t } from "../../../../languageHandler";
@@ -17,6 +16,7 @@ import SdkConfig from "../../../../SdkConfig";
 import { EncryptionCardButtons } from "./EncryptionCardButtons";
 import { EncryptionCardEmphasisedContent } from "./EncryptionCardEmphasisedContent";
 
+import { X as CrossIcon, AlertCircle as ErrorIcon } from "lucide-react";
 interface Props {
     /**
      * Called when the user either cancels the operation or key storage has been disabled

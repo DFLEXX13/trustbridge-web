@@ -7,7 +7,7 @@
  */
 
 import React, { type ComponentProps, type Ref, type JSX } from "react";
-import ThreadsSolidIcon from "@vector-im/compound-design-tokens/assets/web/icons/threads-solid";
+
 import classNames from "classnames";
 import { IconButton, Text, Tooltip } from "@vector-im/compound-web";
 
@@ -15,6 +15,7 @@ import { _t } from "../../../../languageHandler";
 import { type NotificationLevel } from "../../../../stores/notifications/NotificationLevel";
 import { notificationLevelToIndicator } from "../../../../utils/notifications";
 
+import { MessagesSquare as ThreadsSolidIcon } from "lucide-react";
 interface ThreadsActivityCentreButtonProps extends ComponentProps<typeof IconButton> {
     /**
      * Whether to disable the tooltip.

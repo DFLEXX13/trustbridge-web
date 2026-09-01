@@ -8,11 +8,11 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { type ReactElement } from "react";
 import classNames from "classnames";
-import CheckmarkIcon from "@vector-im/compound-design-tokens/assets/web/icons/check";
 
 import Dropdown, { type DropdownProps } from "./Dropdown";
 import { type NonEmptyArray } from "../../../@types/common";
 
+import { Check as CheckmarkIcon } from "lucide-react";
 export type FilterDropdownOption<FilterKeysType extends string> = {
     id: FilterKeysType;
     label: string;

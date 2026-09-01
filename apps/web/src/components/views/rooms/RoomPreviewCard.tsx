@@ -9,7 +9,6 @@ Please see LICENSE files in the repository root for full details.
 import React, { type JSX, type FC, useContext, useState } from "react";
 import { type Room, JoinRule } from "matrix-js-sdk/src/matrix";
 import { KnownMembership } from "matrix-js-sdk/src/types";
-import { InfoSolidIcon, VideoCallSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 import defaultDispatcher from "../../../dispatcher/dispatcher";
@@ -31,6 +30,7 @@ import RoomInfoLine from "./RoomInfoLine";
 import { isVideoRoom as calcIsVideoRoom } from "../../../utils/video-rooms";
 import { useRoomName } from "../../../hooks/useRoomName.ts";
 
+import { Info as InfoSolidIcon, Video as VideoCallSolidIcon } from "lucide-react";
 interface IProps {
     room: Room;
     onJoinButtonClicked: () => void;

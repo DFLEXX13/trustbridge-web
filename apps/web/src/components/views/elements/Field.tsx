@@ -19,10 +19,10 @@ import React, {
 import classNames from "classnames";
 import { debounce } from "lodash";
 import { Tooltip } from "@vector-im/compound-web";
-import { ChevronDownIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { type IFieldState, type IValidationResult } from "./Validation";
 
+import { ChevronDown as ChevronDownIcon } from "lucide-react";
 // Invoke validation from user input (when typing, etc.) at most once every N ms.
 const VALIDATION_THROTTLE_MS = 200;
 

@@ -7,7 +7,7 @@
  */
 
 import React, { type JSX, useCallback, useContext, useEffect, useId, useRef, useState } from "react";
-import PinIcon from "@vector-im/compound-design-tokens/assets/web/icons/pin-solid";
+
 import { Button } from "@vector-im/compound-web";
 import { type MatrixEvent, type Room } from "matrix-js-sdk/src/matrix";
 import classNames from "classnames";
@@ -28,6 +28,7 @@ import { SDKContext } from "../../../contexts/SDKContext.ts";
 import MatrixClientContext from "../../../contexts/MatrixClientContext";
 import { EventPreviewViewModel } from "../../../viewmodels/room/timeline/event-tile/EventPreviewViewModel";
 
+import { Pin as PinIcon } from "lucide-react";
 /**
  * The props for the {@link PinnedMessageBanner} component.
  */

@@ -9,8 +9,7 @@ Please see LICENSE files in the repository root for full details.
 import React, { type JSX } from "react";
 import { type KeyBackupInfo, type VerificationRequest } from "matrix-js-sdk/src/crypto-api";
 import { logger } from "matrix-js-sdk/src/logger";
-import DevicesIcon from "@vector-im/compound-design-tokens/assets/web/icons/devices";
-import LockIcon from "@vector-im/compound-design-tokens/assets/web/icons/lock-solid";
+
 import { Button } from "@vector-im/compound-web";
 
 import { _t } from "../../../languageHandler";
@@ -30,6 +29,7 @@ import dispatcher from "../../../dispatcher/dispatcher";
 import E2EIcon from "../../views/rooms/E2EIcon.tsx";
 import { E2EStatus } from "../../../utils/ShieldUtils.ts";
 
+import { Smartphone as DevicesIcon, Lock as LockIcon } from "lucide-react";
 interface IProps {
     onFinished: () => void;
     /**

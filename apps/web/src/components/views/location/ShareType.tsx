@@ -7,7 +7,6 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React, { type HTMLAttributes, useContext } from "react";
-import LocationIcon from "@vector-im/compound-design-tokens/assets/web/icons/location-pin-solid";
 
 import MatrixClientContext from "../../../contexts/MatrixClientContext";
 import { _t } from "../../../languageHandler";
@@ -18,6 +17,7 @@ import Heading from "../typography/Heading";
 import { LocationShareType } from "./shareLocation";
 import StyledLiveBeaconIcon from "../beacon/StyledLiveBeaconIcon";
 
+import { MapPin as LocationIcon } from "lucide-react";
 const UserAvatar: React.FC = () => {
     const matrixClient = useContext(MatrixClientContext);
     const userId = matrixClient.getSafeUserId();

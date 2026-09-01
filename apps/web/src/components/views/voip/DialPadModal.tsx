@@ -7,7 +7,6 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React, { type ChangeEvent, createRef, type SyntheticEvent } from "react";
-import { CloseIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import AccessibleButton, { type ButtonEvent } from "../elements/AccessibleButton";
 import Field from "../elements/Field";
@@ -15,6 +14,7 @@ import DialPad from "./DialPad";
 import DialPadBackspaceButton from "../elements/DialPadBackspaceButton";
 import { SDKContextClass } from "../../../contexts/SDKContextClass.ts";
 
+import { X as CloseIcon } from "lucide-react";
 interface IProps {
     onFinished: (dialled: boolean) => void;
 }

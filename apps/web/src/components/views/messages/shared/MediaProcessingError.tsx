@@ -7,8 +7,8 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React from "react";
-import { FileErrorIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
+import { FileWarning as FileErrorIcon } from "lucide-react";
 interface Props {
     className?: string;
     Icon?: typeof FileErrorIcon;

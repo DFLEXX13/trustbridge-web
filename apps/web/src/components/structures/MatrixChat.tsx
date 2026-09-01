@@ -28,7 +28,6 @@ import { TooltipProvider } from "@vector-im/compound-web";
 import "what-input";
 import sanitizeHtml from "sanitize-html";
 import { I18nContext, LinkedTextContext, LinkedText } from "@element-hq/web-shared-components";
-import { LockSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import PosthogTrackers from "../../PosthogTrackers";
 import { DecryptionFailureTracker } from "../../DecryptionFailureTracker";
@@ -142,6 +141,7 @@ import { type URLParams } from "../../vector/url_utils.ts";
 import { type QrLoginCredentials } from "../views/auth/LoginWithQR.tsx";
 import { configureFromCompletedOAuthLogin } from "../../Lifecycle";
 
+import { Lock as LockSolidIcon } from "lucide-react";
 const AUTH_SCREENS = ["register", "mobile_register", "login", "forgot_password", "start_sso", "start_cas", "welcome"];
 
 // Actions that are redirected through the onboarding process prior to being

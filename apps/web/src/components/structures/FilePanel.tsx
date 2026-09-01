@@ -20,7 +20,6 @@ import {
     type TimelineWindow,
 } from "matrix-js-sdk/src/matrix";
 import { logger } from "matrix-js-sdk/src/logger";
-import FilesIcon from "@vector-im/compound-design-tokens/assets/web/icons/files";
 
 import { MatrixClientPeg } from "../../MatrixClientPeg";
 import EventIndexPeg from "../../indexing/EventIndexPeg";
@@ -36,6 +35,7 @@ import EmptyState from "../views/right_panel/EmptyState";
 import { ScopedRoomContextProvider } from "../../contexts/ScopedRoomContext.tsx";
 import { EventPresentationContextProvider } from "../../utils/EventPresentationContextProvider";
 
+import { Files as FilesIcon } from "lucide-react";
 interface IProps {
     roomId: string;
     onClose: () => void;

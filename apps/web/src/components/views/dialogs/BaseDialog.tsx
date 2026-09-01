@@ -12,7 +12,6 @@ import React, { type JSX } from "react";
 import FocusLock from "react-focus-lock";
 import classNames from "classnames";
 import { type MatrixClient } from "matrix-js-sdk/src/matrix";
-import { CloseIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import AccessibleButton from "../elements/AccessibleButton";
 import { MatrixClientPeg } from "../../../MatrixClientPeg";
@@ -23,6 +22,7 @@ import { PosthogScreenTracker, type ScreenName } from "../../../PosthogTrackers"
 import { getKeyBindingsManager } from "../../../KeyBindingsManager";
 import { KeyBindingAction } from "../../../accessibility/KeyboardShortcuts";
 
+import { X as CloseIcon } from "lucide-react";
 interface IProps {
     /**
      * Whether the dialog should have a 'close' button and a keyDown handler which

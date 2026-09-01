@@ -8,7 +8,6 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React, { type JSX, useEffect, useState } from "react";
-import { ErrorIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import dis from "../../../../dispatcher/dispatcher";
 import { _t } from "../../../../languageHandler";
@@ -19,6 +18,7 @@ import DialogButtons from "../../../../components/views/elements/DialogButtons";
 import BaseDialog from "../../../../components/views/dialogs/BaseDialog";
 import { useMatrixClientContext } from "../../../../contexts/MatrixClientContext.tsx";
 
+import { AlertCircle as ErrorIcon } from "lucide-react";
 /**
  * Properties for {@link NewRecoveryMethodDialog}.
  */

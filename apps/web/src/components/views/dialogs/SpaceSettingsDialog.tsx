@@ -8,12 +8,6 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { useMemo } from "react";
 import { type Room, type MatrixClient } from "matrix-js-sdk/src/matrix";
-import {
-    AdminIcon,
-    AdvancedSettingsIcon,
-    SettingsSolidIcon,
-    VisibilityOnIcon,
-} from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t, _td } from "../../../languageHandler";
 import BaseDialog from "./BaseDialog";
@@ -29,6 +23,12 @@ import RolesRoomSettingsTab from "../settings/tabs/room/RolesRoomSettingsTab";
 import { Action } from "../../../dispatcher/actions";
 import { type NonEmptyArray } from "../../../@types/common";
 
+import {
+    ShieldCheck as AdminIcon,
+    SlidersHorizontal as AdvancedSettingsIcon,
+    Settings as SettingsSolidIcon,
+    Eye as VisibilityOnIcon,
+} from "lucide-react";
 export enum SpaceSettingsTab {
     General = "SPACE_GENERAL_TAB",
     Visibility = "SPACE_VISIBILITY_TAB",

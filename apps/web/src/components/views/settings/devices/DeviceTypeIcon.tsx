@@ -8,19 +8,19 @@ Please see LICENSE files in the repository root for full details.
 
 import React from "react";
 import classNames from "classnames";
-import {
-    ShieldIcon,
-    ErrorSolidIcon,
-    ComputerIcon,
-    MobileIcon,
-    WebBrowserIcon,
-    DevicesIcon,
-} from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t, _td } from "../../../../languageHandler";
 import { type ExtendedDevice } from "./types";
 import { DeviceType } from "../../../../utils/device/parseUserAgent";
 
+import {
+    Shield as ShieldIcon,
+    AlertCircle as ErrorSolidIcon,
+    Monitor as ComputerIcon,
+    Smartphone as MobileIcon,
+    Globe as WebBrowserIcon,
+    Smartphone as DevicesIcon,
+} from "lucide-react";
 interface Props {
     isVerified?: ExtendedDevice["isVerified"];
     isSelected?: boolean;

@@ -13,12 +13,12 @@ import React from "react";
 import { type CallFeed, CallFeedEvent } from "matrix-js-sdk/src/webrtc/callFeed";
 import { logger } from "matrix-js-sdk/src/logger";
 import { SDPStreamMetadataPurpose } from "matrix-js-sdk/src/webrtc/callEventTypes";
-import { MicOffSolidIcon, MicOnSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import SettingsStore from "../../../settings/SettingsStore";
 import RoomAvatar from "../avatars/RoomAvatar";
 import { SDKContext } from "../../../contexts/SDKContext.ts";
 
+import { MicOff as MicOffSolidIcon, Mic as MicOnSolidIcon } from "lucide-react";
 interface IProps {
     call: MatrixCall;
 

@@ -23,7 +23,7 @@ import {
     type TimelineEvents,
 } from "matrix-js-sdk/src/matrix";
 import { KnownMembership } from "matrix-js-sdk/src/types";
-import { CheckCircleIcon, CircleIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
+
 import { AutoHideScrollbar } from "@element-hq/web-shared-components";
 
 import { _t } from "../../../languageHandler";
@@ -65,6 +65,7 @@ import SettingsStore from "../../../settings/SettingsStore";
 import { parseEvent } from "../../../editor/deserialize";
 import EditorModel from "../../../editor/model";
 
+import { CheckCircle2 as CheckCircleIcon, Circle as CircleIcon } from "lucide-react";
 const AVATAR_SIZE = 30;
 
 interface IProps {

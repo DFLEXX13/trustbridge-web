@@ -17,7 +17,6 @@ import React, {
     type Ref,
 } from "react";
 import classnames from "classnames";
-import { ChevronDownIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import AccessibleButton, { type ButtonEvent } from "./AccessibleButton";
 import { _t } from "../../../languageHandler";
@@ -26,6 +25,7 @@ import { KeyBindingAction } from "../../../accessibility/KeyboardShortcuts";
 import { objectHasDiff } from "../../../utils/objects";
 import { type NonEmptyArray } from "../../../@types/common";
 
+import { ChevronDown as ChevronDownIcon } from "lucide-react";
 interface IMenuOptionProps {
     children: ReactElement;
     highlighted?: boolean;

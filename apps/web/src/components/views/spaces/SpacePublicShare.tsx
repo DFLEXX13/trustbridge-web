@@ -9,7 +9,6 @@ Please see LICENSE files in the repository root for full details.
 import React, { useState } from "react";
 import { type Room } from "matrix-js-sdk/src/matrix";
 import { sleep } from "matrix-js-sdk/src/utils";
-import { LinkIcon, UserAddIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { _t } from "../../../languageHandler";
 import { copyPlaintext } from "../../../utils/strings";
@@ -20,6 +19,7 @@ import { shouldShowComponent } from "../../../customisations/helpers/UIComponent
 import { UIComponent } from "../../../settings/UIFeature";
 import SpacePillButton from "../../structures/SpacePillButton.tsx";
 
+import { Link as LinkIcon, UserPlus as UserAddIcon } from "lucide-react";
 interface IProps {
     space: Room;
     onFinished?(this: void): void;

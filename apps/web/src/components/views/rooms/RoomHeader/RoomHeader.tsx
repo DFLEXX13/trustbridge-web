@@ -9,20 +9,11 @@ Please see LICENSE files in the repository root for full details.
 
 import React, { type JSX, useCallback, useContext, useState } from "react";
 import { Text, Button, IconButton, Menu, MenuItem, Tooltip } from "@vector-im/compound-web";
-import VideoCallIcon from "@vector-im/compound-design-tokens/assets/web/icons/video-call-solid";
-import VoiceCallIcon from "@vector-im/compound-design-tokens/assets/web/icons/voice-call-solid";
-import CloseCallIcon from "@vector-im/compound-design-tokens/assets/web/icons/close";
-import ThreadsIcon from "@vector-im/compound-design-tokens/assets/web/icons/threads-solid";
-import RoomInfoIcon from "@vector-im/compound-design-tokens/assets/web/icons/info-solid";
-import NotificationsIcon from "@vector-im/compound-design-tokens/assets/web/icons/notifications-solid";
-import VerifiedIcon from "@vector-im/compound-design-tokens/assets/web/icons/verified";
-import ErrorIcon from "@vector-im/compound-design-tokens/assets/web/icons/error-solid";
-import PublicIcon from "@vector-im/compound-design-tokens/assets/web/icons/public";
+
 import { HistoryVisibility, JoinRule, type Room } from "matrix-js-sdk/src/matrix";
 import { type ViewRoomOpts } from "@matrix-org/react-sdk-module-api/lib/lifecycles/RoomViewLifecycle";
 import { Flex, Box, StatusTextView } from "@element-hq/web-shared-components";
 import { CallType } from "matrix-js-sdk/src/webrtc/call";
-import { HistoryIcon, UserProfileSolidIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { useRoomName } from "../../../../hooks/useRoomName.ts";
 import { RightPanelPhases } from "../../../../stores/right-panel/RightPanelStorePhases.ts";
@@ -58,6 +49,19 @@ import { useIsEncrypted } from "../../../../hooks/useIsEncrypted.ts";
 import { useUserStatus } from "../../../../hooks/useUserStatus.ts";
 import { SDKContext } from "../../../../contexts/SDKContext.ts";
 
+import {
+    Video as VideoCallIcon,
+    Phone as VoiceCallIcon,
+    X as CloseCallIcon,
+    MessagesSquare as ThreadsIcon,
+    Info as RoomInfoIcon,
+    BellRing as NotificationsIcon,
+    BadgeCheck as VerifiedIcon,
+    AlertCircle as ErrorIcon,
+    Globe as PublicIcon,
+    History as HistoryIcon,
+    User as UserProfileSolidIcon,
+} from "lucide-react";
 function RoomHeaderButtons({
     room,
     legacyAdditionalButtons,

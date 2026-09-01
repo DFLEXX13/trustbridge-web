@@ -23,8 +23,7 @@ import {
 import { RelatedRelations } from "matrix-js-sdk/src/models/related-relations";
 import { type PollStartEvent, type PollAnswerSubevent } from "matrix-js-sdk/src/extensible_events_v1/PollStartEvent";
 import { PollResponseEvent } from "matrix-js-sdk/src/extensible_events_v1/PollResponseEvent";
-import PollsIcon from "@vector-im/compound-design-tokens/assets/web/icons/polls";
-import PollsEndIcon from "@vector-im/compound-design-tokens/assets/web/icons/polls-end";
+
 import { useEventPresentation } from "@element-hq/web-shared-components";
 
 import { _t } from "../../../languageHandler";
@@ -39,6 +38,7 @@ import { MatrixClientPeg } from "../../../MatrixClientPeg";
 import Spinner from "../elements/Spinner";
 import { PollOption } from "../polls/PollOption";
 
+import { BarChart2 as PollsIcon, StopCircle as PollsEndIcon } from "lucide-react";
 interface IState {
     poll?: Poll;
     // poll instance has fetched at least one page of responses

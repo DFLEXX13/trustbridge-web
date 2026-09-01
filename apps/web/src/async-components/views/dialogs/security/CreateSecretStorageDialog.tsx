@@ -13,7 +13,6 @@ import { logger } from "matrix-js-sdk/src/logger";
 import { type AuthDict } from "matrix-js-sdk/src/matrix";
 import { type GeneratedSecretStorageKey } from "matrix-js-sdk/src/crypto-api";
 import classNames from "classnames";
-import CheckmarkIcon from "@vector-im/compound-design-tokens/assets/web/icons/check";
 
 import { MatrixClientPeg } from "../../../../MatrixClientPeg";
 import { _t, _td } from "../../../../languageHandler";
@@ -34,6 +33,7 @@ import { type IValidationResult } from "../../../../components/views/elements/Va
 import PassphraseConfirmField from "../../../../components/views/auth/PassphraseConfirmField";
 import { initialiseDehydrationIfEnabled } from "../../../../utils/device/dehydration";
 
+import { Check as CheckmarkIcon } from "lucide-react";
 enum SecureBackupSetupMethod {
     Key = "key",
     Passphrase = "passphrase",

@@ -9,18 +9,6 @@ Please see LICENSE files in the repository root for full details.
 import React, { type JSX, type MouseEventHandler, type ReactNode } from "react";
 import { type FormattingFunctions, type AllActionStates, type ActionState } from "@vector-im/matrix-wysiwyg";
 import classNames from "classnames";
-import BoldIcon from "@vector-im/compound-design-tokens/assets/web/icons/bold";
-import BulletedListIcon from "@vector-im/compound-design-tokens/assets/web/icons/list-bulleted";
-import CodeBlockIcon from "@vector-im/compound-design-tokens/assets/web/icons/code";
-import UnIndentIcon from "@vector-im/compound-design-tokens/assets/web/icons/indent-decrease";
-import IndentIcon from "@vector-im/compound-design-tokens/assets/web/icons/indent-increase";
-import InlineCodeIcon from "@vector-im/compound-design-tokens/assets/web/icons/inline-code";
-import ItalicIcon from "@vector-im/compound-design-tokens/assets/web/icons/italic";
-import NumberedListIcon from "@vector-im/compound-design-tokens/assets/web/icons/list-numbered";
-import QuoteIcon from "@vector-im/compound-design-tokens/assets/web/icons/quote";
-import StrikeThroughIcon from "@vector-im/compound-design-tokens/assets/web/icons/strikethrough";
-import UnderlineIcon from "@vector-im/compound-design-tokens/assets/web/icons/underline";
-import LinkIcon from "@vector-im/compound-design-tokens/assets/web/icons/link";
 
 import { _t } from "../../../../../languageHandler";
 import AccessibleButton, { type ButtonEvent } from "../../../elements/AccessibleButton";
@@ -29,6 +17,20 @@ import { useComposerContext } from "../ComposerContext";
 import { KeyboardShortcut } from "../../../settings/KeyboardShortcut";
 import { type KeyCombo } from "../../../../../KeyBindingsManager";
 
+import {
+    Bold as BoldIcon,
+    List as BulletedListIcon,
+    Code2 as CodeBlockIcon,
+    Outdent as UnIndentIcon,
+    Indent as IndentIcon,
+    Code as InlineCodeIcon,
+    Italic as ItalicIcon,
+    ListOrdered as NumberedListIcon,
+    Quote as QuoteIcon,
+    Strikethrough as StrikeThroughIcon,
+    Underline as UnderlineIcon,
+    Link as LinkIcon,
+} from "lucide-react";
 interface ButtonProps {
     icon: ReactNode;
     actionState: ActionState;

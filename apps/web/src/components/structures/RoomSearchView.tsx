@@ -14,7 +14,6 @@ import {
     THREAD_RELATION_TYPE,
 } from "matrix-js-sdk/src/matrix";
 import { logger } from "matrix-js-sdk/src/logger";
-import { SearchIcon } from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import ScrollPanel from "./ScrollPanel";
 import Spinner from "../views/elements/Spinner";
@@ -26,6 +25,7 @@ import MatrixClientContext from "../../contexts/MatrixClientContext";
 import { RoomPermalinkCreator } from "../../utils/permalinks/Permalinks";
 import { useScopedRoomContext } from "../../contexts/ScopedRoomContext.tsx";
 
+import { Search as SearchIcon } from "lucide-react";
 const DEBUG = false;
 let debuglog = function (msg: string): void {};
 

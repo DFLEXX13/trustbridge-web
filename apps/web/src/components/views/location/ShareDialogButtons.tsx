@@ -7,12 +7,11 @@ Please see LICENSE files in the repository root for full details.
 */
 
 import React from "react";
-import CloseIcon from "@vector-im/compound-design-tokens/assets/web/icons/close";
-import BackIcon from "@vector-im/compound-design-tokens/assets/web/icons/chevron-left";
 
 import AccessibleButton from "../elements/AccessibleButton";
 import { _t } from "../../../languageHandler";
 
+import { X as CloseIcon, ChevronLeft as BackIcon } from "lucide-react";
 interface Props {
     onCancel: () => void;
     onBack: () => void;

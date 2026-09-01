@@ -8,11 +8,11 @@ Please see LICENSE files in the repository root for full details.
 
 import React from "react";
 import classNames from "classnames";
-import LocationMarkerIcon from "@vector-im/compound-design-tokens/assets/web/icons/location-pin-solid";
 
 import MapFallbackImage from "../../../../res/img/location/map.svg?react";
 import Spinner from "../elements/Spinner";
 
+import { MapPin as LocationMarkerIcon } from "lucide-react";
 interface Props extends React.HTMLAttributes<HTMLDivElement> {
     className?: string;
     isLoading?: boolean;

@@ -11,13 +11,6 @@ Please see LICENSE files in the repository root for full details.
 
 import React from "react";
 import { CallType, type MatrixCall } from "matrix-js-sdk/src/webrtc/call";
-import {
-    EndCallIcon,
-    VideoCallSolidIcon,
-    VoiceCallSolidIcon,
-    VolumeOffSolidIcon,
-    VolumeOnSolidIcon,
-} from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import { LegacyCallHandlerEvent } from "../LegacyCallHandler";
 import { _t } from "../languageHandler";
@@ -26,6 +19,13 @@ import AccessibleButton, { type ButtonEvent } from "../components/views/elements
 import { getCallStateIcon } from "../components/views/messages/LegacyCallEvent.tsx";
 import { SDKContext } from "../contexts/SDKContext.ts";
 
+import {
+    PhoneOff as EndCallIcon,
+    Video as VideoCallSolidIcon,
+    Phone as VoiceCallSolidIcon,
+    VolumeX as VolumeOffSolidIcon,
+    Volume2 as VolumeOnSolidIcon,
+} from "lucide-react";
 export const getIncomingLegacyCallToastKey = (callId: string): string => `call_${callId}`;
 
 interface IProps {

@@ -11,20 +11,6 @@ Please see LICENSE files in the repository root for full details.
 import React, { createRef, useState, type Ref, type FC, type JSX } from "react";
 import classNames from "classnames";
 import { type MatrixCall } from "matrix-js-sdk/src/webrtc/call";
-import {
-    ChevronDownIcon,
-    ChevronUpIcon,
-    DialPadIcon,
-    EndCallIcon,
-    ListViewIcon,
-    MicOffSolidIcon,
-    MicOnSolidIcon,
-    OverflowHorizontalIcon,
-    ShareScreenSolidIcon,
-    SpotlightViewIcon,
-    VideoCallOffSolidIcon,
-    VideoCallSolidIcon,
-} from "@vector-im/compound-design-tokens/assets/web/icons";
 
 import LegacyCallContextMenu from "../../context_menus/LegacyCallContextMenu";
 import DialpadContextMenu from "../../context_menus/DialpadContextMenu";
@@ -38,6 +24,20 @@ import {
 import { _t } from "../../../../languageHandler";
 import DeviceContextMenu from "../../context_menus/DeviceContextMenu";
 import { MediaDeviceKindEnum } from "../../../../MediaDeviceHandler";
+import {
+    ChevronDown as ChevronDownIcon,
+    ChevronUp as ChevronUpIcon,
+    Grid3x3 as DialPadIcon,
+    PhoneOff as EndCallIcon,
+    List as ListViewIcon,
+    MicOff as MicOffSolidIcon,
+    Mic as MicOnSolidIcon,
+    MoreHorizontal as OverflowHorizontalIcon,
+    ScreenShare as ShareScreenSolidIcon,
+    LayoutGrid as SpotlightViewIcon,
+    VideoOff as VideoCallOffSolidIcon,
+    Video as VideoCallSolidIcon,
+} from "lucide-react";
 import AccessibleButton, {
     type ButtonEvent,
     type ButtonProps as AccessibleButtonProps,

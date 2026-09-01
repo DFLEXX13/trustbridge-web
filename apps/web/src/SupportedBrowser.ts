@@ -8,7 +8,7 @@ Please see LICENSE files in the repository root for full details.
 
 import { logger } from "matrix-js-sdk/src/logger";
 import browserlist from "browserslist";
-import PopOutIcon from "@vector-im/compound-design-tokens/assets/web/icons/pop-out";
+
 import memoizeOne from "memoize-one";
 
 import { DeviceType, parseUserAgent } from "./utils/device/parseUserAgent";
@@ -17,6 +17,7 @@ import GenericToast from "./components/views/toasts/GenericToast";
 import { _t } from "./languageHandler";
 import SdkConfig from "./SdkConfig";
 
+import { ExternalLink as PopOutIcon } from "lucide-react";
 export const LOCAL_STORAGE_KEY = "mx_accepts_unsupported_browser";
 const TOAST_KEY = "unsupportedbrowser";
 
