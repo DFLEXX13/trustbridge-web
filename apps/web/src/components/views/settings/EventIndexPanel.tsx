@@ -164,26 +164,9 @@ export default class EventIndexPanel extends React.Component<EmptyObject, IState
                 </>
             );
         } else if (EventIndexPeg.platformHasSupport() && !EventIndexPeg.supportIsInstalled()) {
-            const nativeLink =
-                "https://github.com/element-hq/element-web/blob/develop/" +
-                "docs/native-node-modules.md#" +
-                "adding-seshat-for-search-in-e2e-encrypted-rooms";
-
             eventIndexingSettings = (
                 <SettingsSubsectionText>
-                    {_t(
-                        "settings|security|message_search_unsupported",
-                        {
-                            brand,
-                        },
-                        {
-                            nativeLink: (sub) => (
-                                <ExternalLink href={nativeLink} target="_blank" rel="noreferrer noopener">
-                                    {sub}
-                                </ExternalLink>
-                            ),
-                        },
-                    )}
+                    {_t("settings|security|message_search_unsupported", { brand })}
                 </SettingsSubsectionText>
             );
         } else if (!EventIndexPeg.platformHasSupport()) {
