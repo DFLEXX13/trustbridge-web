@@ -628,7 +628,7 @@
         "stop_voice_message": "Остановить запись",
         "voice_message_button": "Голосовое сообщение"
     },
-    "console_dev_note": "Если вы знаете, что делаете, Element с открытым исходным кодом, обязательно зайдите на наш GitHub (https://github.com/vector-im/element-web/) и внесите свой вклад!",
+    "console_dev_note": "Если вы знаете, что делаете: TrustBridge построен на открытом протоколе Matrix.",
     "console_scam_warning": "Если кто-то сказал вам скопировать/вставить что-то здесь, велика вероятность, что вас пытаются обмануть!",
     "console_wait": "Подождите!",
     "create_room": {

@@ -38,11 +38,10 @@ export const mobileApps: Record<MobileAppVariant, MobileAppMetadata> = {
         isProApp: false,
     },
     [MobileAppVariant.X]: {
-        name: "Element X",
-        appleAppId: "id1631335820",
-        appStoreUrl: "https://apps.apple.com/app/element-x-secure-chat-call/id1631335820",
-        playStoreUrl: "https://play.google.com/store/apps/details?id=io.element.android.x",
-        fDroidUrl: "https://f-droid.org/packages/io.element.android.x",
+        name: "TrustBridge",
+        appleAppId: "id6740811289",
+        appStoreUrl: "https://apps.apple.com/app/id6740811289",
+        playStoreUrl: "https://play.google.com/store/apps/details?id=com.trustbridge.application",
         deepLinkPath: "/element",
         usesLegacyDeepLink: false,
         isProApp: false,
@@ -63,7 +62,8 @@ export function updateMobilePage(metadata: MobileAppMetadata, deepLinkUrl: strin
     appleMeta.setAttribute("content", `app-id=${metadata.appleAppId}`);
 
     if (server) {
-        (document.getElementById("header_title") as HTMLHeadingElement).innerText = `Join ${server} on Element`;
+        (document.getElementById("header_title") as HTMLHeadingElement).innerText =
+            `Join ${server} on ${metadata.name}`;
     }
     (document.getElementById("app_store_link") as HTMLAnchorElement).href = metadata.appStoreUrl;
     (document.getElementById("play_store_link") as HTMLAnchorElement).href = metadata.playStoreUrl;
