@@ -472,7 +472,7 @@ class LoggedInView extends React.Component<IProps, IState> {
             case KeyBindingAction.ShowKeyboardSettings:
                 dis.dispatch<OpenToTabPayload>({
                     action: Action.ViewUserSettings,
-                    initialTabId: UserTab.Keyboard,
+                    initialTabId: UserTab.Preferences,
                 });
                 handled = true;
                 break;

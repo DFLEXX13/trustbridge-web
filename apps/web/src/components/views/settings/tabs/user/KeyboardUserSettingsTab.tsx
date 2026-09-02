@@ -21,8 +21,6 @@ import {
     getKeyboardShortcutValue,
 } from "../../../../../accessibility/KeyboardShortcutUtils";
 import { KeyboardShortcut } from "../../KeyboardShortcut";
-import SettingsTab from "../SettingsTab";
-import { SettingsSection } from "../../shared/SettingsSection";
 import { SettingsSubsection } from "../../shared/SettingsSubsection";
 import { showLabsFlags } from "./LabsUserSettingsTab";
 
@@ -67,18 +65,16 @@ const KeyboardShortcutSection: React.FC<IKeyboardShortcutSectionProps> = ({ cate
     );
 };
 
-const KeyboardUserSettingsTab: React.FC = () => {
+/**
+ * Renders the keyboard-shortcut reference as a series of SettingsSubsections,
+ * for embedding directly into another settings tab's SettingsSection.
+ */
+export function KeyboardShortcutSections(): React.JSX.Element {
     return (
-        <SettingsTab>
-            <SettingsSection>
-                {visibleCategories.map(([categoryName, category]) => {
-                    return (
-                        <KeyboardShortcutSection key={categoryName} categoryName={categoryName} category={category} />
-                    );
-                })}
-            </SettingsSection>
-        </SettingsTab>
+        <>
+            {visibleCategories.map(([categoryName, category]) => {
+                return <KeyboardShortcutSection key={categoryName} categoryName={categoryName} category={category} />;
+            })}
+        </>
     );
-};
-
-export default KeyboardUserSettingsTab;
+}

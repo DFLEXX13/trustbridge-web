@@ -481,6 +481,7 @@
         "integration_manager": "Менеджер интеграции",
         "joined": "Присоединился",
         "labs": "Лаборатория",
+        "legacy_voice_and_video_settings": "Устаревшие голосовые и видеозвонки",
         "legal": "Правовая информация",
         "light": "Светлая",
         "loading": "Загрузка…",
@@ -2378,7 +2379,7 @@
             "crypto_version": "Криптоверсия:",
             "dialog_title": "<strong>Настройки:</strong> Помощь и информация",
             "help_link": "Для получения помощи по использованию %(brand)s, нажмите <a>здесь</a>.",
-            "homeserver": "Домашний сервер: <code>%(homeserverUrl)s</code>",
+            "homeserver": "Сервер: <code>%(homeserverUrl)s</code>",
             "identity_server": "Сервер идентификации: <code>%(identityServerUrl)s</code>",
             "title": "Помощь и о программе",
             "versions": "Версии"
@@ -2895,7 +2896,7 @@
         "show_typing_notifications": "Уведомлять о наборе текста",
         "showbold": "Показывать всю активность в списке комнат (точки или количество непрочитанных сообщений)",
         "sidebar": {
-            "dialog_title": "<strong>Настройки:</strong> Боковая панель",
+            "dialog_title": "<strong>Настройки:</strong> Организация комнат",
             "metaspaces_home_all_rooms": "Показать все комнаты",
             "metaspaces_home_all_rooms_description": "Показать все комнаты на Главной, даже если они находятся в пространстве.",
             "metaspaces_home_description": "Раздел \"Главная\" полезен для получения общего вида.",
@@ -2904,9 +2905,9 @@
             "metaspaces_subsection": "Пространства для показа",
             "metaspaces_video_rooms": "Видеокомнаты и конференции",
             "metaspaces_video_rooms_description": "Сгруппировать все частные видеокомнаты и конференции.",
-            "metaspaces_video_rooms_description_invite_extension": "В конференции вы можете приглашать людей за пределами matrix.",
+            "metaspaces_video_rooms_description_invite_extension": "В конференции вы можете приглашать людей за пределами вашей организации.",
             "spaces_explainer": "Пространства — это способ сгруппировать комнаты и людей. Помимо пространств, в которых вы находитесь, вы также можете использовать готовые помещения.",
-            "title": "Боковая панель"
+            "title": "Организация комнат"
         },
         "start_automatically": {
             "disabled": "Нет",

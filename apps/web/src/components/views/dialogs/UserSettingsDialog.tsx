@@ -28,7 +28,6 @@ import MjolnirUserSettingsTab from "../settings/tabs/user/MjolnirUserSettingsTab
 import { UIFeature } from "../../../settings/UIFeature";
 import BaseDialog from "./BaseDialog";
 import SidebarUserSettingsTab from "../settings/tabs/user/SidebarUserSettingsTab";
-import KeyboardUserSettingsTab from "../settings/tabs/user/KeyboardUserSettingsTab";
 import SessionManagerTab from "../settings/tabs/user/SessionManagerTab";
 import { UserTab } from "./UserTab";
 import { type NonEmptyArray } from "../../../@types/common";
@@ -44,7 +43,6 @@ import {
     Eye as VisibilityOnIcon,
     Bell as NotificationsIcon,
     Settings2 as PreferencesIcon,
-    Keyboard as KeyboardIcon,
     Key as KeyIcon,
     PanelLeft as SidebarIcon,
     Mic as MicOnIcon,
@@ -85,8 +83,6 @@ function titleForTabID(tabId: UserTab): React.ReactNode {
             return _t("settings|notifications|dialog_title", undefined, subs);
         case UserTab.Preferences:
             return _t("settings|preferences|dialog_title", undefined, subs);
-        case UserTab.Keyboard:
-            return _t("settings|keyboard|dialog_title", undefined, subs);
         case UserTab.Sidebar:
             return _t("settings|sidebar|dialog_title", undefined, subs);
         case UserTab.Voice:
@@ -178,15 +174,6 @@ export default function UserSettingsDialog(props: IProps): JSX.Element {
                 <PreferencesIcon />,
                 <PreferencesUserSettingsTab />,
                 "UserSettingsPreferences",
-            ),
-        );
-        tabs.push(
-            new Tab(
-                UserTab.Keyboard,
-                _td("settings|keyboard|title"),
-                <KeyboardIcon />,
-                <KeyboardUserSettingsTab />,
-                "UserSettingsKeyboard",
             ),
         );
         tabs.push(

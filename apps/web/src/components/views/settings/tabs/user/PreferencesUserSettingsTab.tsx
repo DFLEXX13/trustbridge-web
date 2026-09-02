@@ -18,11 +18,6 @@ import Field from "../../../elements/Field";
 import Dropdown from "../../../elements/Dropdown";
 import { SettingLevel } from "../../../../../settings/SettingLevel";
 import SettingsFlag from "../../../elements/SettingsFlag";
-import AccessibleButton from "../../../elements/AccessibleButton";
-import dis from "../../../../../dispatcher/dispatcher";
-import { UserTab } from "../../../dialogs/UserTab";
-import { type OpenToTabPayload } from "../../../../../dispatcher/payloads/OpenToTabPayload";
-import { Action } from "../../../../../dispatcher/actions";
 import SdkConfig from "../../../../../SdkConfig";
 import { SettingsSubsection } from "../../shared/SettingsSubsection";
 import SettingsTab from "../SettingsTab";
@@ -32,6 +27,7 @@ import PlatformPeg from "../../../../../PlatformPeg";
 import { IS_MAC } from "../../../../../Keyboard";
 import SpellCheckSettings from "../../SpellCheckSettings";
 import * as TimezoneHandler from "../../../../../TimezoneHandler";
+import { KeyboardShortcutSections } from "./KeyboardUserSettingsTab";
 import { type BooleanSettingKey } from "../../../../../settings/Settings.tsx";
 import { MediaPreviewAccountSettings } from "./MediaPreviewAccountSettings.tsx";
 import { InviteRulesAccountSetting } from "./InviteRulesAccountSettings.tsx";
@@ -232,13 +228,6 @@ export default class PreferencesUserSettingsTab extends React.Component<EmptyObj
         );
     }
 
-    private onKeyboardShortcutsClicked = (): void => {
-        dis.dispatch<OpenToTabPayload>({
-            action: Action.ViewUserSettings,
-            initialTabId: UserTab.Keyboard,
-        });
-    };
-
     public render(): React.ReactNode {
         const browserTimezoneLabel: string = _t("settings|preferences|default_timezone", {
             timezone: TimezoneHandler.shortBrowserTimezone(),
@@ -289,21 +278,7 @@ export default class PreferencesUserSettingsTab extends React.Component<EmptyObj
                         {this.renderGroup(PreferencesUserSettingsTab.SPACES_SETTINGS, SettingLevel.ACCOUNT)}
                     </SettingsSubsection>
 
-                    <SettingsSubsection
-                        heading={_t("settings|preferences|keyboard_heading")}
-                        description={_t(
-                            "settings|preferences|keyboard_view_shortcuts_button",
-                            {},
-                            {
-                                a: (sub) => (
-                                    <AccessibleButton kind="link_inline" onClick={this.onKeyboardShortcutsClicked}>
-                                        {sub}
-                                    </AccessibleButton>
-                                ),
-                            },
-                        )}
-                        formWrap
-                    >
+                    <SettingsSubsection heading={_t("settings|preferences|keyboard_heading")} formWrap>
                         {this.renderGroup(PreferencesUserSettingsTab.KEYBINDINGS_SETTINGS)}
                     </SettingsSubsection>
 
@@ -415,6 +390,8 @@ export default class PreferencesUserSettingsTab extends React.Component<EmptyObj
                             onChange={this.onReadMarkerOutOfViewThresholdMs}
                         />
                     </SettingsSubsection>
+
+                    <KeyboardShortcutSections />
                 </SettingsSection>
             </SettingsTab>
         );

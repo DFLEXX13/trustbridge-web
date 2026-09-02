@@ -154,18 +154,11 @@ describe("<UserSettingsDialog />", () => {
         expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Settings: Preferences");
     });
 
-    it("renders with keyboard tab selected", () => {
-        const { container } = render(getComponent({ initialTabId: UserTab.Keyboard }));
-
-        expect(getActiveTabLabel(container)).toEqual("Keyboard");
-        expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Settings: Keyboard");
-    });
-
     it("renders with sidebar tab selected", () => {
         const { container } = render(getComponent({ initialTabId: UserTab.Sidebar }));
 
-        expect(getActiveTabLabel(container)).toEqual("Sidebar");
-        expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Settings: Sidebar");
+        expect(getActiveTabLabel(container)).toEqual("Room organization");
+        expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Settings: Room organization");
     });
 
     it("renders with voip tab selected", () => {

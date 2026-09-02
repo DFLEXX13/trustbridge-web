@@ -495,7 +495,7 @@
         "integration_manager": "Integration manager",
         "joined": "Joined",
         "labs": "Labs",
-        "legacy_voice_and_video_settings": "Matrix 1:1 Calls (Legacy)",
+        "legacy_voice_and_video_settings": "Legacy voice & video calls",
         "legal": "Legal",
         "light": "Light",
         "loading": "Loading…",
@@ -2440,8 +2440,8 @@
             "crypto_version": "Crypto version:",
             "dialog_title": "<strong>Settings:</strong> Help & About",
             "help_link": "For help with using %(brand)s, click <a>here</a>.",
-            "homeserver": "Homeserver is <code>%(homeserverUrl)s</code>",
-            "identity_server": "Identity server is <code>%(identityServerUrl)s</code>",
+            "homeserver": "Server: <code>%(homeserverUrl)s</code>",
+            "identity_server": "Identity server: <code>%(identityServerUrl)s</code>",
             "title": "Help & About",
             "versions": "Versions"
         }
@@ -2956,7 +2956,7 @@
         "show_typing_notifications": "Show typing notifications",
         "showbold": "Show all activity in the room list (dots or number of unread messages)",
         "sidebar": {
-            "dialog_title": "<strong>Settings:</strong> Sidebar",
+            "dialog_title": "<strong>Settings:</strong> Room organization",
             "metaspaces_home_all_rooms": "Show all rooms",
             "metaspaces_home_all_rooms_description": "Show all your rooms in Home, even if they're in a space.",
             "metaspaces_home_description": "Home is useful for getting an overview of everything.",
@@ -2965,9 +2965,9 @@
             "metaspaces_subsection": "Spaces to show",
             "metaspaces_video_rooms": "Video rooms and conferences",
             "metaspaces_video_rooms_description": "Group all private video rooms and conferences.",
-            "metaspaces_video_rooms_description_invite_extension": "In conferences you can invite people outside of matrix.",
+            "metaspaces_video_rooms_description_invite_extension": "In conferences you can invite people from outside your organization.",
             "spaces_explainer": "Spaces are ways to group rooms and people. Alongside the spaces you're in, you can use some pre-built ones too.",
-            "title": "Sidebar"
+            "title": "Room organization"
         },
         "start_automatically": {
             "disabled": "No",
