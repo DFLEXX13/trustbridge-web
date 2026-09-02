@@ -1255,8 +1255,10 @@ export const SETTINGS: Settings = {
         default: 80,
     },
     "layout": {
-        supportedLevels: LEVELS_ACCOUNT_SETTINGS,
-        default: Layout.Group,
+        // TrustBridge always uses the bubble layout: no user-facing toggle, so this
+        // is locked (no supported levels) rather than just defaulted.
+        supportedLevels: [],
+        default: Layout.Bubble,
     },
     "Images.size": {
         supportedLevels: LEVELS_ACCOUNT_SETTINGS,
