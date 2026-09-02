@@ -3787,7 +3787,7 @@
         "disabled_no_perms_start_video_call": "У вас нет разрешения для запуска видеозвонка",
         "disabled_no_perms_start_voice_call": "У вас нет разрешения для запуска звонка",
         "disabled_ongoing_call": "Текущий звонок",
-        "element_call": "Element Call",
+        "element_call": "TrustBridge Calls",
         "enable_camera": "Включить камеру",
         "enable_microphone": "Включить микрофон",
         "expand": "Вернуться к звонку",
