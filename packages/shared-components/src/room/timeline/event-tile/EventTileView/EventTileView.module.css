@@ -36,6 +36,7 @@
     --event-tile-bubble-margin-inline-end: 60px;
     --event-tile-bubble-other-background: var(--cpd-color-gray-300);
     --event-tile-bubble-self-background: var(--cpd-color-green-300);
+    --event-tile-bubble-self-color: inherit;
     --event-tile-bubble-hover-background: var(--cpd-color-bg-subtle-secondary);
 
     /* Shared preview, action-bar, bubble, and interaction values. */
@@ -908,6 +909,7 @@
         border-end-start-radius: var(--event-tile-bubble-corner-radius);
         border-end-end-radius: 0;
         background: var(--event-tile-bubble-self-background);
+        color: var(--event-tile-bubble-self-color);
         margin-inline-start: auto;
     }
 
