@@ -58,11 +58,10 @@ export const DEFAULTS = {
     desktop_builds: {
         available: true,
         logo: "vector-icons/1024.png",
-        url: "https://element.io/download",
-        url_macos: "https://packages.element.io/desktop/install/macos/Element.dmg",
-        url_win64: "https://packages.element.io/desktop/install/win32/x64/Element%20Setup.exe",
-        url_win64arm: "https://packages.element.io/desktop/install/win32/arm64/Element%20Setup.exe",
-        url_linux: "https://element.io/download#linux",
+        url: "https://github.com/DFLEXX13/trustbridge-desktop/releases/tag/v1.12.13",
+        url_macos: "https://github.com/DFLEXX13/trustbridge-desktop/releases/download/v1.12.13/TrustBridge-1.12.13-universal.dmg",
+        url_win64: "https://github.com/DFLEXX13/trustbridge-desktop/releases/download/v1.12.13/TrustBridge.1.12.13.msi",
+        url_linux: "https://github.com/DFLEXX13/trustbridge-desktop/releases/download/v1.12.13/TrustBridge-1.12.13.AppImage",
     },
     mobile_builds: {
         ios: "https://apps.apple.com/app/vector/id1083446067",
