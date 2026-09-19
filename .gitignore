@@ -43,3 +43,4 @@ storybook-static
 # vitepress
 /docs/.vitepress/dist
 /docs/.vitepress/cache
+apps/web/res/media/backup_original/
