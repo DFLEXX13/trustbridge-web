@@ -58,10 +58,10 @@ export const DEFAULTS = {
     desktop_builds: {
         available: true,
         logo: "vector-icons/1024.png",
-        url: "https://github.com/DFLEXX13/trustbridge-desktop/releases/tag/v1.12.13",
-        url_macos: "https://github.com/DFLEXX13/trustbridge-desktop/releases/download/v1.12.13/TrustBridge-1.12.13-universal.dmg",
-        url_win64: "https://github.com/DFLEXX13/trustbridge-desktop/releases/download/v1.12.13/TrustBridge.1.12.13.msi",
-        url_linux: "https://github.com/DFLEXX13/trustbridge-desktop/releases/download/v1.12.13/TrustBridge-1.12.13.AppImage",
+        url: "https://github.com/DFLEXX13/trustbridge-desktop/releases/tag/v1.12.14",
+        url_macos: "https://github.com/DFLEXX13/trustbridge-desktop/releases/download/v1.12.14/TrustBridge-1.12.14-universal.dmg",
+        url_win64: "https://github.com/DFLEXX13/trustbridge-desktop/releases/download/v1.12.14/TrustBridge.1.12.14.msi",
+        url_linux: "https://github.com/DFLEXX13/trustbridge-desktop/releases/download/v1.12.14/TrustBridge-1.12.14.AppImage",
     },
     mobile_builds: {
         ios: "https://apps.apple.com/app/vector/id1083446067",
